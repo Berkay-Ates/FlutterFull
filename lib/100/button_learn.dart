@@ -19,17 +19,21 @@ class ButtonLearn extends StatelessWidget {
           ),
           IconButton(
             onPressed: () => null,
-            icon: Icon(Icons.account_balance_wallet_sharp),
+            icon: const Icon(Icons.account_balance_wallet_sharp),
           ),
           OutlinedButton(
             onPressed: () => null,
-            child: Text('hello world'),
+            child: const Text('hello world'),
             style: OutlinedButton.styleFrom(
-                backgroundColor: Colors.amberAccent,
-                padding: EdgeInsets.all(25),
-                shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.vertical(
-                        top: Radius.zero, bottom: Radius.circular(20)))),
+              backgroundColor: Colors.amberAccent,
+              padding: const EdgeInsets.all(25),
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.vertical(
+                  top: Radius.zero,
+                  bottom: Radius.circular(20),
+                ),
+              ),
+            ),
           ),
           InkWell(
             onTap: () => null,

@@ -1,0 +1,6 @@
+Column ve row tasarımlarını responsive yapmak için expanded widgeti ve onun flex özelliginden 
+Faydalanabiliriz. 
+Expanded widget daha çok column ve rowlarla beraber kullanılır. Yoksa genelde hatalar alabiliriz. : )
+
+
+eleman atmadan sadece flex mantıgında boşluk oluşturmak için Column ve rowlarda Spacer() propertysini kullanırız

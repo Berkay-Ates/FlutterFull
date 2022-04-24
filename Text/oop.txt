@@ -1,0 +1,4 @@
+OOP mantığından ortak style ları vermek işstediğimizde yapmamız gerkek olan şey basitçe şudur: 
+herzamanki gibi sabit sttle,renk gibi propertylerimzi tutan bir class oluşturuyoruz. Sonra bu classın ilgili 
+özelliklerine ihtiyaç duyan en minimal yerde bu classı extend olarak yaıyoruz yani direk sabitler classımızı 
+diğer classlara temel ıolarak tanımlıyoruz. 

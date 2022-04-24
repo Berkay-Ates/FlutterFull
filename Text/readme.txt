@@ -33,9 +33,15 @@ oldugu default theme leri değiştirir
 
 
 
+
+
+
+** EGER FLUTTER'IN BIZLERE SAGLAMIS OLDUGU COMPONENTLER YETERLI DEGILSE KENDI COMPONENTLERIMIZI YAZMAMIZ GERKLIDIR
+- core componentler primitive özelliklerde olmalılar kullanan kişiler istediklerigibi oluşturduğumuz 
+widget' ları maüpüle edebilmeliler 
+
 ------------- Tricks 
 icon amblemlerini görmek için intellj'nin içindeyken control-j yapmamız yeterlidir
-
 
 
 ' _ ' ( alttan tire) elemanın file private olmasını sağlar bu sayede bu elemana sadece tanımlanmış 
@@ -50,6 +56,7 @@ Bu yüzden kullanacağımız padding değerlerini belirli bir class içine yazı
 
 Theme de en baştan default gelenleri örn:background yeniden istediğin gibi tanımla 
 sonra gerektigi yerde direk bunları theme ğzerinden çekerek kullan.  
+
 
 
 
