@@ -16,7 +16,7 @@ class IconLearn extends StatelessWidget {
             size: IconValues.size,
             color: IconValues.colors,
           ),
-          SizedBox(
+          const SizedBox(
             height: 100,
           ),
           Icon(
@@ -32,5 +32,5 @@ class IconLearn extends StatelessWidget {
 
 class IconValues {
   static double size = 65;
-  static Color colors = Color(0xffA92B4F);
+  static Color colors = const Color(0xffA92B4F);
 }

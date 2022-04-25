@@ -1,0 +1,9 @@
+Set state uygulamanın performansını düşürür kanka 
+Şöyle ki her set state çalıştırıldıgında set state çalıştırılmış olan yer en baştan build edilir 
+dolayısıyla uygulamanın telefon üzerinde oluşturdugu yük artar ve performansı düşer 
+örnegin build içinde bir set state çalıştırdıgımızda build içinde bulunan tüm widgetler en baştan build edilir: 
+
+
+Bu yüzden mobx, Block Provider gibi kütüphanelrden faydalanabiliriz. 
+Veya basit düzeyde set state komutunu kullanan widget'i build içerisinden kopararak set state'i 
+direk build içerisinden çağırmayarak sayfanın sadece ilgili parçasının en baştan çizilmesini sağlayabiliriz 
