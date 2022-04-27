@@ -35,10 +35,8 @@ class CustomComponentLearn extends StatelessWidget {
   }
 }
 
-class CustomFoodWidget extends StatelessWidget
-    with _ColorsUtility, _PaddingUtility {
-  CustomFoodWidget({required this.title, required this.onPressed, Key? key})
-      : super(key: key);
+class CustomFoodWidget extends StatelessWidget with _ColorsUtility, _PaddingUtility {
+  CustomFoodWidget({required this.title, required this.onPressed, Key? key}) : super(key: key);
   final String title;
   final void Function() onPressed;
 
@@ -54,10 +52,7 @@ class CustomFoodWidget extends StatelessWidget
         padding: normalPadding,
         child: Text(
           title,
-          style: Theme.of(context)
-              .textTheme
-              .headline6
-              ?.copyWith(color: whiteColor, fontWeight: FontWeight.bold),
+          style: Theme.of(context).textTheme.headline6?.copyWith(color: whiteColor, fontWeight: FontWeight.bold),
         ),
       ),
     );

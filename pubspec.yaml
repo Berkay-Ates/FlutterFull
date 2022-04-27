@@ -30,6 +30,7 @@ flutter:
   assets:
     - assets/png/Image.png
     - assets/png/ScreenShot2022-04-19at21.33.57.png
+    - assets/png/ic_roundedimage.png
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

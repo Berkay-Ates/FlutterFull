@@ -1,0 +1,20 @@
+Listview'un scroll direction'u hangi yön ise o yönde listview sonsuza gider dolayısıyla biz listwiev'un 
+Scroll olmayan directionunda listview'a sınır vermemiz gerekir yoksa kafası karışabilir.
+Default olarak scroll directionu vertical geldigi için en baştaki listview'u with olarak sizedbox
+ile sınırlamamız gerekmedi ama içteki 2. sizedbox horizontal olarak scroll edildiği için 
+height kısmını sizedbox ile sınırlandırmamız gerekti kısıtlamamız  
+
+
+Scroll özellikli bir yapı kurarken bu yapıda buşunacak elemanları en baştan illa oluşturmam mı gerek arkadaş
+Diyorsanız ListView.builder bizler için iş başında . Listview.builder ekranda elemanlar gözükeceği an elemanları
+oluşturur. Bu mantık çhild içindeki elemanlar ekran boyutunu aşıp dışarı taştıgında Listview için de geçerlidir.
+
+
+Eğer ListView.builder ile oluşturacagınız elemanların sayısı belli ise bu defa Listview'un itemCount 
+property'si üzerinden ListView'un nihayetinde en fazla kaç eleman çizmesi gerektigini belirtebiliriz. 
+Dikkat edilmesi gereken Listview.builder istenilen sayıdaki itemları ekranda gözükmesini beklemeden en 
+baştan en sonuncuya kadar çizmemesi için itemların boyutlarını belirlemeliyiz. Bu sayede listview ekranda 
+bulunan kadar itemı çizer
+
+
+

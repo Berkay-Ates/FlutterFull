@@ -13,13 +13,11 @@ class CardLearn extends StatelessWidget {
       body: Column(
         children: const [
           Card(
-            elevation:
-                0, //? elevation card componentinin html deki z indexi gibidir
+            elevation: 0, //? elevation card componentinin html deki z indexi gibidir
             margin: ProjectMargins.cardMargin,
             //! shape: StadiumBorder(),
             //! shape: CircleBorder(),
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(12))),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
             child: SizedBox(
               height: 150,
               width: 250,

@@ -1,0 +1,3 @@
+late demek bu değer constructor sürecinde gelecek ,
+final 1 defa oluşturulacak sonrasında hep sabit kalacak 
+late final constructor sürecinde gelecek ve birdaha değişmeyecek demek 

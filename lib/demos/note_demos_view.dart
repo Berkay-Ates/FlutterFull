@@ -5,8 +5,7 @@ import 'package:master/100/image_learn.dart';
 class NoteDemosView extends StatelessWidget {
   const NoteDemosView({Key? key}) : super(key: key);
   final _title = 'Creat your first note';
-  final _description =
-      'This is the course that will teach me how to code efficiently';
+  final _description = 'This is the course that will teach me how to code efficiently';
   final _title2 = 'Create a note';
   final _importNotes = 'Import Notes';
 
@@ -75,9 +74,10 @@ class DescriptionWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       _description,
-      style: Theme.of(context).textTheme.subtitle1?.copyWith(
-          color: Theme.of(context).colorScheme.onSecondary,
-          fontWeight: FontWeight.w300),
+      style: Theme.of(context)
+          .textTheme
+          .subtitle1
+          ?.copyWith(color: Theme.of(context).colorScheme.onSecondary, fontWeight: FontWeight.w300),
     );
   }
 }
@@ -96,16 +96,16 @@ class TitleWidget extends StatelessWidget {
     return Text(
       _title,
       textAlign: TextAlign.center,
-      style: Theme.of(context).textTheme.headline5?.copyWith(
-          color: Theme.of(context).colorScheme.onSecondary,
-          fontWeight: FontWeight.w600),
+      style: Theme.of(context)
+          .textTheme
+          .headline5
+          ?.copyWith(color: Theme.of(context).colorScheme.onSecondary, fontWeight: FontWeight.w600),
     );
   }
 }
 
 class PadddingItems {
-  static final EdgeInsets horizontalPadding =
-      EdgeInsets.symmetric(horizontal: 40);
+  static final EdgeInsets horizontalPadding = EdgeInsets.symmetric(horizontal: 40);
 
   static final titlePadding = const EdgeInsets.only(top: 15);
 }

@@ -8,6 +8,9 @@ import 'package:master/100/container_sized_learn.dart';
 import 'package:master/100/custom_component_learn.dart';
 import 'package:master/100/icon.learn.dart';
 import 'package:master/100/image_learn.dart';
+import 'package:master/100/list_view_builder.learn.dart';
+import 'package:master/100/list_view_learn.dart';
+import 'package:master/100/navigation_learn.dart';
 import 'package:master/100/scaffold.learn.dart';
 import 'package:master/100/stack_learn.dart';
 import 'package:master/100/statefull_learn.dart';
@@ -15,6 +18,9 @@ import 'package:master/100/statefull_lifecycle_learn.dart';
 import 'package:master/100/stateless_learn.dart';
 import 'package:master/100/text_field_learn.dart';
 import 'package:master/100/text_learn.dart';
+import 'package:master/demos/color_demos_view.dart';
+import 'package:master/demos/color_life_cycle_view.dart';
+import 'package:master/demos/my_collections_demo.dart';
 import 'package:master/demos/note_demos_view.dart';
 import 'package:master/demos/stack_view_demo.dart';
 import '100/indicator_learn.dart';
@@ -41,7 +47,7 @@ class MyApp extends StatelessWidget {
         ),
         errorColor: ColorValues().sulu,
       ),
-      home: const TextFieldLearn(),
+      home: const NavigationLearn(),
     );
   }
 }

@@ -1,0 +1,69 @@
+Navigator ile istedigimiz widget'e kullanıvcıyı push metodu sayesinde gönderebiliriz
+gittiği yerden geri gelmesini de pop ile sağlayabiliriz. 
+
+
+Bu geçişlerin spesifik olaylarına ihtiyaç duydugumuzda yönelmemiz yerinde olacaktır.
+
+
+Geçişler arasınde navigator üzerinden veri akışı da sağlayabiliriz. 
+
+
+GElirken veri getirmek için : 
+VEri akışı sağlanacağında async olarak navigation'u yazmamız ve navigation sonucında bir future 
+jenerik objesi almamız gerekir
+
+Dikkat kesilmesi gereken husus gittiğimiz sayfadan pop ile geri gelirken kullanıcının geri gelirken
+belirli bir durumu gerçeklemesi gerekir örneğin bir buttona basmak vs. durduk yerde geri gelirken 
+herhangi bir verinin bize dönmesini bekleyemeyiz. Yani Veri Sağlayacak olan logic'i karşı tarafta 
+dogru kurmamız gerekir. 
+
+
+
+Giderken veri yollamak için 
+Push ederken RootSettings içerisinden arguman yollayabiliriz. 
+dikkat edilmesi gerken husus karşıya gönderdiğimiz bilgiyi ancak didChangeDependency 
+altında yakalayabiliyoruz. Yani veri initstate'den sonra geliyor. 
+//? final Object? incoming = ModalRoute.of(context)?.settings.arguments;
+
+
+Veya direk gideceğimiz class'ın constructoru içerisinde gerken verileri isteriz ve 
+yukarıdaki gibi herhangi bir ModalRoute'den veri okumayla uğraşmayız.
+
+
+
+
+Acıklama (){
+print('
+
+    ilk olarak $VB  Navigator üzerinden $ikinciClass kısmına veri gönderip bu veriyi de 
+    didChangeDependency üzerinden almayı denedi. Dikkat DidChangeDependency çünkü Navigatorla 
+    gelen veri $ikinciClass init edildikten sonra geliyor, dikkat edilmesi gereken diğer nokta 
+    push ederken veri yolluyoruz pop ederken veri çekmiyorıuz. Sonra $VB bunun çok effective 
+    olmadıgına karar vererek $ikinciClass constructoru içinde isOkey adında default olarak false 
+    olan nullable bir parametre oluşturdu. Ve $ilkClass dan $ikinciClass a gelirken bu parametreyi 
+    Place holder'ın bulundugu index selected items da var ise true yok ise false değeri olarak yolladı.
+    Sonra $ilkClass dan gelen isOkey değerine göre Text buttonda uygun değerleri gösterdik  
+    yeşil -kırmızı. Devamında $ikinciClass Pop olurken de kullanıcı true bir değeri false,  false 
+    bir değeri true olarak değiştirebileceği için $ilkClass dan gelen değerin tersini yolladık. 
+    En nihayetinde tekrar $ilkClass sayfasına gittigimizde  $ikinciClass dan gelen değer true ise 
+    demekki kullanıcının tıkladığı placeholder en başta selectedItems da yoktu demekki artık var 
+    kullanıcı eklemek istiyor, eger false ise demekki kullanıcının tıkladığı placeholder selected 
+    items'da vardı artık yok yani remove it. Ha bu arada selected items'a veri ekleyip çekerken uı'da
+    değişiklikler olmasını istediğimiz için bu işlemleri setState içinde yapıyoruz. Ah ah State 
+    management adamdır işte nelerle ugraşıyor insan yoksa ... oluştur bitane Selected items
+    List i sonra basitçe $ikinciClass dan ve $ilkClass'dan ilgili işlemleri yap selected itemsında 
+    hem verimli hem anlaması kolay. Geleceğiz orayada yakındır. 
+
+');
+}
+
+
+}
+
+mixin Variables{
+final VB. = 'Veli Bacık';
+final ilkClass = 'NavigationLearn';
+final ikinciClass = 'Navigate_Detail_Learn';
+}
+
+

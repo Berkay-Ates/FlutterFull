@@ -22,10 +22,11 @@ class AppbarLearn extends StatelessWidget {
             onPressed: () => null,
             icon: Icon(Icons.accessibility_sharp),
           ),
-          Center(
-              child: CircularProgressIndicator(
-            color: Colors.white38,
-          )),
+          const Center(
+            child: CircularProgressIndicator(
+              color: Colors.white38,
+            ),
+          ),
         ],
       ),
     );

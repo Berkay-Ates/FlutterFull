@@ -1,7 +1,7 @@
 
 Decoration 
 
-decoration : InputDecoration(prefix:Icon(Icons.mail));
+decoration : InputDecoration(prefix:Icon(Icons.mail));  
 
 
 minlength,
