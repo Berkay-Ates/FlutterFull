@@ -1,0 +1,30 @@
+Tabbar kullanaağımız sayfa içinde Scaffold yerine defaultTabbar Widgetimiz ile işe 
+başlıyoruz. Sonra bu default tabbar'in child'i içinde Scaffoldumuzu veriyoruz. 
+Bu Scaffold'un içnde de TabbarView widgetimizi yerleştiriyoruz. TAbbarView içine 
+koyacağımız tab widget'leri detabbar olarak ekranda gözüküyor.   
+
+
+Dikkat tabbar PAgeView değildir ama birbirlerine benzerler. 
+
+
+Sayfa olarak yerleştirdigimiz tabbarların etiketlerinin gözükmesi için de ya bottom 
+appbar içinde yada apparın bottom kısmı içinde TAbabar ekleyerek tab sayfalarımızın 
+tablarını gösterebiliyoruz. 
+
+DefaultTabController => Scaffold => Appar ve TabbarView 
+tabbar'a controller vererek TAbbarView'u kontrol edeiliyoruz. 
+
+
+tabbar coontroller'ı tabbarView'a ve tabbar'a birden ermemiz lazım ki ikisi birden konuşup
+beraber hareket hareket etsinler 
+
+
+Tabbarların kullanımında ve daha birçok yerde enumlardan  yararlanarak tablarımızı bu
+enmumlar üzerinden etiketleyebiliriz. Ayrıca Jenerik programlamanın mantıgına uygun olarak 
+enumlar sayesinde Tabview ve tabbar ksıımlarında herhangi bir static sayı girmakten  de 
+kaçınabiliriz. 
+
+
+
+
+

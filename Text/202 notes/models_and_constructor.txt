@@ -1,0 +1,31 @@
+Model oluşturmamın kendi içinde birden çok yöntemi vardır. Bu yöntemlerden kendi durumumuz için 
+en uygun olanını seçip kullanmamız gerekir. 
+
+
+
+private constructorda elemanlar private tutulur classın herhangi bir objesinden elemanlara
+ulaşılamaz bile. Eğer ulaşılmasını istersek bunu kendi encapsulation kurallarımızla oluşturup
+userlara verebiliriz. 
+
+
+
+Herhangi bir modelin odeğerleri güncellenirken her zaman bu güncellemeleri fonksiyonlar 
+üzerinden yaptırtmamız hem class üzerindeki hakimiyetimizi arttırır hem de oluşabilecek 
+hataların önüne geçmemize engel olur. 
+
+
+
+final variable değişkenli bir classın herhangi bir elemanını güncellemek içinde CopyWith
+ilgili class da copywith methodu oluşturup bu method sayesinde classdan yeni bir obje 
+oluşturarak eski objenin değiştirmek istediğimiz değerlerini sabit tutarak güncellemek 
+isteddiklerimizi de güncelleyerek güncel bir data'ya sahip olabiliriz.  
+
+
+eğer değişkenler final değilse ve doşarıdan güncellenebilecekse de bunları fonksiyonlar 
+üzerinden kullanıcılara sunmamız gerekir 
+
+
+
+
+
+

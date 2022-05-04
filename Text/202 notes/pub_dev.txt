@@ -1,0 +1,11 @@
+pub.dev içindeki paket elemanı içind community'den birşeyler barındırıyorsa, hem android 
+hemde ios tarafınfdan native paketleri kullanıyordur demektir. 
+
+pubdev den alıp kullandıgımız elemanları kendi özelleştirilmiş widgetlarımız haline çevirmemiz 
+gerekir. mısacası uygulamamız içinden direk dışarıdaki paketlere ne kendimiz ne de takımdaki 
+diğer kişilere erişme imkanı vermemeiz iyi olur . 
+
+
+pub devden projemize eklediğimiz ve native paketlerle flutter arasında bridge özelligi taşıyan 
+paketlerin ilk kullanmları için çalışan uygulamamızı kapatıp tekrar açamamız gerekir yoksa projemizde
+tanımlı olmaz 

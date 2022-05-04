@@ -1,0 +1,7 @@
+Default theme verirken colorScheme propertySi içinden custom thema'mız için default
+renkler atayabiliriz.
+ 
+ Dışartıdan vereceğimiz renkler için de custom bir class içinde renkleri tutabiliriz. Ama 
+ renklerin isimleri karışacagi için color name genereator sitesinden renklerimize isimler ürettirip 
+ kullanırsak daha iyi olur. 
+

@@ -1,0 +1,12 @@
+Animations Crossfade animations sayesinde değişiklik olacak 2 widget arasında otomatik olarak
+oluşturulmuş animasyonlar ile geçiş yapabiliriz.   
+
+
+<== ORN ==> 
+
+AnimatedCrossFade(
+    firstChild: const Icon(Icons.visibility_off_outlined),
+    secondChild: const Icon(Icons.visibility_outlined),
+    crossFadeState: _isSecure ? CrossFadeState.showFirst : CrossFadeState.showSecond,
+    duration: const Duration(milliseconds: 450) 
+); 

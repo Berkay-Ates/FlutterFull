@@ -33,10 +33,7 @@ class ColorLearn extends StatelessWidget {
               child: Container(
                 child: Text(
                   'from theme',
-                  style: Theme.of(context)
-                      .textTheme
-                      .subtitle2
-                      ?.copyWith(color: ColorValues().porsche),
+                  style: Theme.of(context).textTheme.subtitle2?.copyWith(color: ColorValues().porsche),
                 ),
                 height: 200,
                 width: 300,

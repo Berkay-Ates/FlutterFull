@@ -1,0 +1,23 @@
+FLutterda default gelen theme özelliklerini Projenin root kısmından güncelleyerek her yerde default 
+olarak kendi custumize ettigimiz classı kullanmamız gerkir. Diğer opsiyon olarak oluşturdugumuz 
+her widgete ayrı ayrı theme özelligi atama işlemi gereksi ve anlamsız bir işlemdir.
+
+
+
+Themayı atarken halihazırdaki light veya dark themayı farklılaştırarak kullanabiliriz veya istersek 
+tamamen sıfırdan kendi themeDatamızı oluşturarak oluşturdugumuz bu main dosyasını main içinden
+MaterialApp'ın theme properssine atayarak uygulama içierisinde default theme olarak kullanılmasını 
+sağlayabiliriz. Theme'i en baştan oluşturduğumuzda özelleştirmek istediğimiz elemanları eğer istersek 
+Yine theme.of(context).copywith() ile kopyalayıp üzerine özelleştirmeler yapabiliriz. 
+
+
+
+Abe en içeriden istediğimiz gibi default theme özelliklerini kulalanmak varken kim tekrar tekrar theme'i 
+her yerde güncellemek ister .
+
+
+
+
+
+
+

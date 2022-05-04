@@ -1,0 +1,2 @@
+enum classları uzerine veya belki ilerde görürsek diye faklı class yapıları üzerine istersek 
+exstension yoazarak istedigimiz classı zenginlestirebiliriz. e

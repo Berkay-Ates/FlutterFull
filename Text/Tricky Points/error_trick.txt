@@ -1,0 +1,2 @@
+API de meydana gelen hatayı yakalamek için T jenerik type alıp bu jenerik type'ı ekrana bastırddık 
+bastırılırken de classın ismi için this  komutunu verdiğimiz çin hatanın yerini tespit ettik 

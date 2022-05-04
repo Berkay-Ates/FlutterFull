@@ -1,0 +1,2 @@
+bir modelin özellikleri değişirken bunlar kesinkez fonksiyonlar üzerinden yaptırttırılmalı 
+

@@ -1,0 +1,8 @@
+Abstract olarak oluşturdugumuz ve sadece service kısmının fonksiyonlarını tutan bir classın 
+içine fonksiyonlarımızı yazarak bu fonksiyonları değiştirilemez yani dışarıdan maüpüle edilemez 
+hale getirdik 
+
+
+Service classının late objesini tanımlarken Abstrack Classı tür olarak tanımlayabiliriz. 
+Ama objeyi tanımlarken abstract classtan türeyen yapıyı kullanmamız gerekir. 
+  

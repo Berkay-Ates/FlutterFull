@@ -9,11 +9,11 @@ class TextFieldLearn extends StatefulWidget {
 }
 
 class _TextFieldLearnState extends State<TextFieldLearn> {
-  FocusNode _focusNodeOne = FocusNode();
-  FocusNode _focusNodeOne2 = FocusNode();
+  final FocusNode _focusNodeOne = FocusNode();
+  final FocusNode _focusNodeOne2 = FocusNode();
   @override
   Widget build(BuildContext context) {
-    print('Build called');
+    //? print('Build called');
     return Scaffold(
       appBar: AppBar(),
       body: Column(
@@ -61,6 +61,7 @@ class TextFieldAnimatedContainer extends StatelessWidget {
 class TextProjectInputFormatter {
   final _formatter = TextInputFormatter.withFunction((oldValue, newValue) {
     if (newValue.text == 'a') {
+      //* kullanıcıyı a girmekten mahrum bıraktır
       return newValue;
     }
     return newValue;

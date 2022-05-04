@@ -1,0 +1,59 @@
+Database'e doğrudan erişilmemeli, Database'e veri yazmak için arada Api veya service olmalı 
+Diger durumda sistemin hacklenmesi gibi ihtimaller çok olasıdır. 
+
+Service'e bir button üzerinden işlem yaptırttıgımızda başlatılan işlem birmeden buttona tekrar 
+tıklanılmasını önlememiz gerekir. Yoksa service'in kimyası bozulabilir. 
+
+Client == Api, Service ==> Database  
+ in brief herkes servise e gidecek ve service üzerinden database ile konuşacak 
+
+Mobilde service ile yapılan 4 yaygın işlem 
+
+=> GET 
+    database den veri çekme işlemi, 200 ok 
+
+=> POST
+    databasee veri yazma işlemidir,  200 ok 
+
+=> DELETE
+    delete işlemi database'de bulunan datanın silinmesi işlemidir. 
+
+=> PUT 
+    database de bulunan bir datanın tamamen güncellenmesi işlemidir. 
+
+=> PATCH 
+    Patch işleminde databasedeki datanın tamamı değil de sadece belirli bir kısmı update edilir. 
+
+=> HEAD 
+    head işlemi de get işlemi gibidir ama head işleminde bize herhangi bir data'nın bodysi gelmez
+    gelen şey bu datanın büyüklügü gibi bilgilerdir. 
+
+=> OPTIONS 
+    options işlemi ile galiba serverle yapabileceğimiz işlemleri görebiliyoruz .
+
+=> TRACE METHOD 
+    Teşhis yani diagnosis yapmak için Trace method kullanılır. 
+    get çalıştır sonra trace çalıştır gelen veriler aynı mı değil mi     
+
+=> CONNECT METHOD 
+    Connect methodu client ileserver arasında bir bağlantı sağlar bu bağlantıyı 2 yönlü bir 
+    tünele benzetebiliriz. Bu sayede büyük dosyaları falan servere gönderebiliriz. 
+
+
+
+
+NOTE: 
+==> Service classındaki var olan problemi ve problemin nerde oldugunu ayrıntılı olarak 
+    bulabilmek için _ShowDebug fonksiyonumuza <T> jenerik bir parametre aldık ve fonksiyonu 
+    çağırdımız yerlerde fonksiyonu kullandıgımız classsın adını verdik böylece hata olan 
+    yerlerde exception print fonksiyonumuz çalıştı ve dolayısıyla hatanın hangi class içinde 
+    olduğunu ekrana bastırdı.  
+
+class _ShowDebug {
+  static void showDioError<T>(DioError error, T type) {
+
+      print(error.message);
+      print(type);
+    }
+  }
+}

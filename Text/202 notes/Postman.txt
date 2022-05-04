@@ -1,0 +1,6 @@
+Postman api de yapılan işlemleri test amaçlı denediğimiz ve aslında projenin service kısmının 
+işlemlerinin taslagını oluşturmamıza yarayan bir plugin dir. 
+
+Ayrıca postman sayesinde uygulama içerisinde mullanmamız için müşteri tarafından bize sağlanan 
+API veya service'in çalışığ çalışmadıgını da test etmiş oluruz.
+

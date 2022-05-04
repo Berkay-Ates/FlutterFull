@@ -1,3 +1,8 @@
+Note : 
+init state içinden async bir fonksioyon başlatabiliriz ama init state'i async hale getiremeyiz. 
+Yani init state içinde await atamayız çünkü initstate çalışır ve biter 
+
+
 tema özelligi verirken ;
 
 - class içerisinde sabit style lar oluşturup textlere atamak 

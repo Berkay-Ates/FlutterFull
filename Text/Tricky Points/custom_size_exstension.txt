@@ -1,0 +1,16 @@
+enum WidgetSizes { normalCardHeight, circleProfileWidth }
+
+extension WidgetSizeExtension on WidgetSizes {
+  double value() {
+    switch (this) {
+      case WidgetSizes.normalCardHeight:
+        return 35;
+      case WidgetSizes.circleProfileWidth:
+        return 30;
+    }
+  }
+} 
+
+ widgetlere static olarak size vermek istemediğimizde enum üzerine extension yazarak her enum değeri 
+ için farklı degerler döndüren bir fonksiyon tanımlayabiliriz.Sonrasında bu exstensionu enum üzerinden 
+ Çagırarak static değerler girmekten kurtulailiriz. 

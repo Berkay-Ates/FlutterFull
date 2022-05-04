@@ -1,0 +1,41 @@
+Decoration 
+
+decoration : InputDecoration(prefix:Icon(Icons.mail));  
+
+
+minlength,
+maxLength,
+labelText,
+Label,
+hint,
+minline,
+maxLine
+
+Autofillhint propertysi ile eğerki kredi kartı bilgileri alacaksak bu bilgiyi belirtebiliriz. 
+
+
+buildCounter ile text field'ın sonunda istediğimiz indicator tarzı elemanlar ekleyebiliriz.
+renkdeğiştiren container vs. 
+
+
+Keyboard type den textField'ın içine ne girilmesini beklediğimizi belirtip ona göre 
+telefonun klavyesini değiştirebiliriz 
+keyboardtype: TextInputType.emailAddress
+
+
+
+autofillhint propertysini açarak textfield ın içeriğine göre örenekler verdirtebiliriz. 
+
+Input formatter ile kendi input logiclerimizi yazarak kullanıcının a ya veya herhangi bir 
+sayıya basmamasını saglayabiliriz. Kısacası custom mekanizmamızı hazırklaybiliriz
+
+
+
+==> Textfield' ların içindeki textleri istersek controller oluşturarak değiştirebilir, ulaşabilir
+kıasacası maüpüle edebiliriz. Yada bir değişken oluşturarak textfield'ın textine on changed metodu 
+ile ulaşıp kısacası angela'nın yöntemi terrible one .   
+
+
+==> InputDecoration içindeki suffix prefix propertisi içerisine visible-unvisible Iconunu Kaymalıyız .
+BEcause the place of those stuff is suffic and sufficIcon 
+

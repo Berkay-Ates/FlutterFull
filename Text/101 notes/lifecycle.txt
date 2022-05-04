@@ -1,0 +1,16 @@
+initstate
+init state de henüz view çizilmediği için buradan view da hehangi bir güncelleme yapılamaz.
+
+Dikkat!! init state de herhangi bir parametreyi güncellediğimizde bu parameterini eğer uı'da 
+bir karşılıgı varsa bu güncellemein uı'a yansıması için setState çalıştırmamıza gerek yoktur. 
+Çünkü init state aşamasında henüz daha view ç,z,lmedi bile. 
+
+
+
+
+didChangeDependencies
+
+
+
+didUpdateWidget
+widgetimiz üst clastan bir yerden güncellenirse didupdateWidgetÇağrılır. 
