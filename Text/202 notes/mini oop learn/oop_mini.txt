@@ -1,0 +1,34 @@
+kendimize ait custom hataları döndürmek için exception classına implement eden custom error
+classı tanımlarız ve hatanın olabileceği yerlerde bu hata sınıfımızı throw ettiririz
+
+
+Custom exception yaptık ve kullanıyoruz. Çok iyi exceptionları specificleştirerek meydana 
+gelecek durumlarda ilgili exception'u fırlatarak sorunun neyden kaynaklandıgını anlayabiliriz. 
+Fakat exception her fırlatıldıgında ekranda mini kilitlenmeler meydana gelebilir. Dolayısıyla 
+kilitlenmeleri müşteriye yansımaması için exceptionları ya development esnasında yaparız yada 
+bırakırız müşteriye yansısın 
+
+
+=== ABSTRACT CLASSES <> EXTENDS <> IMPLEMENTS 
+Farklı durumları test etmek için farklı durumlarda farklı hatalar göndermek içn veya da 
+kodu test edilebilir hale getirmek için bu classımızın önüne abstract bir class yazarız 
+
+
+Abstract class'ı direk implement eden bir class abstract class içindeki body'li veya body'siz tüm 
+fonksiyonları kendi içerisine dahil etmeli . Ama sadece extends edersek bu defa extends eden class 
+abstract classdan sadece bodysi olmayan fonksiyonları dahil etmek zorundadır  
+
+==> implements demek abstract classtan tüm özellikleri almak zorundasın !  
+==> extends demek abstract classdan istediklerini alabilirsin istemefiklerini almayabilirsin => mixin ALIR!
+
+
+extends sadece 1 classla kullanılabilir işte bu noktada mixinler devreye girer. implemets ise birden çok 
+class için kullanılabilir. Mixinlerin kullanım alanlarını mixin MyMixin on IFileDownload{} şeklinde 
+istediğimiz gibi kısıtlayabiliriz. mixinleri herhangi bir classı implement eden classlar kullanamaz.
+Fakat herhengi bir classı extends eden class with anahtar kelimesi ile mixinleri kullanabilir. 
+Mixinler de de bodysiz fonksiyonların implementation'u zorunluyken bodyliler zorunlu değildir. 
+
+
+
+
+

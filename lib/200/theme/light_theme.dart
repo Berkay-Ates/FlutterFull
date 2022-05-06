@@ -20,14 +20,12 @@ class LightTheme {
       checkboxTheme: CheckboxThemeData(fillColor: MaterialStateProperty.all(_lightColor._blueMana)),
       colorScheme: ColorScheme.light(
         onSecondary: _lightColor._lightRed,
-        onPrimary: _lightColor._blueMana,
-        primary: _lightColor._blueMana,
+        //onPrimary: _lightColor._blueMana,
       ),
 
       // appBarTheme: AppBarTheme(backgroundColor: Colors.amber),
       textTheme: ThemeData().textTheme.copyWith(
             subtitle1: const TextStyle(
-              // color: _lightColor._lightRed,
               fontSize: 24.0,
             ),
           ),

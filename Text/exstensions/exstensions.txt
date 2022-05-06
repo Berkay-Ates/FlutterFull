@@ -1,0 +1,41 @@
+flutter da enumnlar üzerine extension yazabildigimiz gibi context gibi main elemanlar
+üzerine de exstension yazarak elemanlar üzerine sitediğimiz gibi değişik özellikleri flutter'ın elemanları 
+üzerine dahil edebiliriz.
+
+
+flutter da ister enumlar üzerine ister context gibi ana yapılar üzerine exstensions' lar yazarak
+bu yapıların tekrar eden kod özelliklerini kırpabiliriz. Bu sayede bu elemanların gerek tekrar eden 
+kod yapılarından kurtuluruz gerekse bu elmanları zenginleştirerek farklı özellikleri bünyelerine 
+katmalarını sağlayabiliirz
+ 
+exstensionların yazımı ise "  exstension ali on veli { }  " yandaki gibidir. 
+
+
+Enum üzerine exstension yazarken exstension içinde name anahtar kelimesi ile anum'un adına erişebiliriz 
+exstensionu çalıştırırken de enumun adı üzerinden exstensionlara erişir ve çalıştırırız  
+
+
+=== === === ===
+extension enumExstension on assetEnums {
+
+    Widget toWidget({double heigt = 24}) {
+    return Image.asset(
+      path(),
+      height: heigt,
+    );
+  }
+
+  yukarıdaki gibi extensionu height gibi propertylerle daha da zenginleştirebliriz. 
+}
+  Kullanımı 
+  ImagePath.ic_roundedimage.toWidget(heigt: 230),
+
+  görüldüğü gibi extension direk enum clasındaki elemanların üzerinde beliriyor extension classınn 
+  adını hiç kullanmadık bile 
+=== === === ===
+
+
+
+
+
+

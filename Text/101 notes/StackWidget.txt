@@ -2,4 +2,4 @@ Stack widget içine aldığı childrenleri üzt üste renderlar
 stack içine en son yazılan widget en ilk renderlanır yani LIFO Last In Fırst Out
 
 Stack'ın POSITIONED elementi sayesinde stack widgeti içerisinde istedigimiz yerlerde specific 
-widgetlar gösterebiliriz. 
+widgetlar gösterebiliriz. Specific yrler üzerinde* 

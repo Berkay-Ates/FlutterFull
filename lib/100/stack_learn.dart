@@ -11,7 +11,7 @@ class StackLearn extends StatelessWidget {
         children: [
           Container(height: 100, color: Colors.red),
           Padding(
-            padding: EdgeInsets.only(top: 50),
+            padding: const EdgeInsets.only(top: 50),
             child: Container(height: 100, color: Colors.blue),
           ),
           Positioned(

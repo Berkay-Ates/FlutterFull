@@ -1,0 +1,14 @@
+formfieldItemları form ile sarmalanır ve dışarıdan yönetilmesi için kendine özgü bir key alır. 
+AyrıcaFormField Itemlerin de TExtFeld gibi tüm decoration özellikleri vardırç 
+
+FormField'ın kullanımı 
+
+belirli bir key ile form'u bagladık. 
+dışarıdan bir aksiyon ile de _key üzerinden Form componentlerine erişerek bu formun Form fieldlarının 
+validatenfonksiyonunu çağırdık. Dışarıdaki bu aksiyon gerek post istegi veya herhengi bir button 
+tıklama olayı olabilir.
+
+=> eğer otomatik olarak  vaildate işlemi yapılsın istersek Form'un default olarak userInteraction gelen
+autoValidateMode özelliğini AutomodeVAlidation.always gibi değiştirebiliriz. Tüm bunlara ek olarak 
+Formfield sadece TextFormField'dan ibaret değildir bunun içinde dropdown formField, cupertinoIconFormfield
+gibi birçok eleman vardır

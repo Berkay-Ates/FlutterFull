@@ -1,0 +1,4 @@
+
+Yazdıgımız özel mixin classslarının eğer belirli tipteki classlar üzerinde çalışmasını istersek 
+mixin MyMixin on Widget<Statefull> şeklinde kullanımlarla mixin'in nerelerde kullanılabilir olması 
+gerektiğini kısıtlayabiliriz.

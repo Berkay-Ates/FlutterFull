@@ -19,6 +19,7 @@ import 'package:master/100/statefull_lifecycle_learn.dart';
 import 'package:master/100/stateless_learn.dart';
 import 'package:master/100/text_field_learn.dart';
 import 'package:master/100/text_learn.dart';
+import 'package:master/200/form_learn_view.dart';
 import 'package:master/200/service/comments_learn_view.dart';
 import 'package:master/200/service/service_learn_view.dart';
 import 'package:master/200/service/service_post_learn_view.dart';
@@ -32,8 +33,12 @@ import '100/indicator_learn.dart';
 import '100/list_tile_learn.dart';
 import '100/padding_learn.dart';
 import '100/page_view_learn.dart';
+import '200/animated_learn_view.dart';
+import '200/image_learn_200.dart';
+import '200/mini oop/oop_learn_view.dart';
 import '200/package_view_learn.dart';
 import '200/password_texrfield.dart';
+import '200/state mange/state_manage_view.dart';
 import '200/tab_learn.dart';
 import '200/theme_learn_view.dart';
 import '200/widget_size_enum_learn_view.dart';
@@ -64,7 +69,7 @@ class MyApp extends StatelessWidget {
       //   ),
       //   errorColor: ColorValues().sulu,
       // ),
-      home: const PasswordTextField(),
+      home: const FormLearnView(),
     );
   }
 }

@@ -1,0 +1,40 @@
+==> CROSS FADE WIDGET
+
+Cross fade animation widget'i sayesinde istedigimiz 2 widget arasında animasyonlu geçişler sağlayabiliriz. 
+
+
+==> ANIMATED OPACITY 
+Animated opacity ile istedigimiz widget'in opacitysini değiştirebiliriz 
+
+
+==> ANIMATED TEXT
+animate text sayesinde farklı text style'ları arasına istediğimiz gibi geçişler yapabiliriz 
+buradati style'lar arasındaki geçişi istersek herhangi bir short if ile de yönetebiliriz ama bu geçiş 
+animated text'in bize sağladıgı bigi animasyonlu bir şekilde olmaz 
+
+
+==> ANIMATED ICON
+Anımated ıcın içinde belirli iconların belirli halleri tanımlanış vaziyettedir. yine animated Icon 
+içine acontroller vererek dişarıdaki belirli durumlar içerisinden animated icınun durumunu control 
+edebiliriz. 
+
+
+==> ANIMATED CONTAINER 
+Animated container container üzerinde gerçekleşen olayları animasyonlu bir şekilde yapışmasını 
+sağlar
+
+==> Stack içindeki animated positioned ile de elemanların positionunu animasyonlu olarak değişmesini 
+Sağlayabiliriz. 
+
+
+Flutter'ın halihazırda sağlamış olduğu animasyonlara ek olarak kendimiz dışarıdan bir animasyon 
+effecti oluşturmak istersek nunun için animation controller oluşturarak durumu bu controller
+üzerinden istedigimiz gibi yönetebiliriz vsync vesaire gibi elemenları kullanmayı bilmek gerekiyor 
+
+final late AnimationController _controller;
+
+initState{
+    _controller = AnimationController();
+}
+
+AnimatedIcon(  .... progress: _controller  )

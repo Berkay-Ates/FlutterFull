@@ -1,5 +1,0 @@
-
-Yazdıgımız özel mixin classslarının eğer elirli tipteki classlar üzerinde çalışmasını istersek 
-mixin MyMixin on Widget<Statefull> şeklinde kullanımlarla mixin'in nerelerde öalışması gerektiğini 
-kısıtlayabiliriz. 
-
