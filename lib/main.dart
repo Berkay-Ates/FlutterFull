@@ -34,6 +34,9 @@ import '100/list_tile_learn.dart';
 import '100/padding_learn.dart';
 import '100/page_view_learn.dart';
 import '200/animated_learn_view.dart';
+import '200/cache/secure context/secure_context.dart';
+import '200/cache/shared_learn_cache.dart';
+import '200/cache/shared_list_cache.dart';
 import '200/image_learn_200.dart';
 import '200/mini oop/oop_learn_view.dart';
 import '200/package_view_learn.dart';
@@ -69,7 +72,7 @@ class MyApp extends StatelessWidget {
       //   ),
       //   errorColor: ColorValues().sulu,
       // ),
-      home: const FormLearnView(),
+      home: const SecureContextView(),
     );
   }
 }

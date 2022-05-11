@@ -20,6 +20,7 @@ abstract classdan sadece bodysi olmayan fonksiyonları dahil etmek zorundadır
 
 ==> implements demek abstract classtan tüm özellikleri almak zorundasın !  
 ==> extends demek abstract classdan istediklerini alabilirsin istemefiklerini almayabilirsin => mixin ALIR!
+extends ile aldıgımız classın bodysiz fonksiyonlarını tanımlamamız da zorunludur. 
 
 
 extends sadece 1 classla kullanılabilir işte bu noktada mixinler devreye girer. implemets ise birden çok 
@@ -30,5 +31,9 @@ Mixinler de de bodysiz fonksiyonların implementation'u zorunluyken bodyliler zo
 
 
 
+=== === === === === === === === === === === === === 
 
+Farz-ı misal her defasında is loading ve is loading'i değiştiren bir logic'i her defasında sınıflarda 
+kulllanıyoruz. Öyleyse Generic olarak statefull bir classtan türeyen abstrack bir class oluşturup bu özelligi 
+istedigimiz tüm classlara bu classtan türemek şartı ile kazandırmıyoruz? 
 

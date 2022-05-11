@@ -1,0 +1,13 @@
+Custom objelerimizin oldugu bir listeyi Shared preferences'e kaydetmek istedigimizde ilk olarak 
+Shared preferences'in sadece primitive yapıdaki verileri kaydettigini farkediyoruz. 
+
+Dolayısıyla elimizdeki custom objeleri stringe çevirip kaydetmemiz gerekli 
+bunun için öncelikle Shared manager de listeleri kaydedebilecegimiz fonksiyonu yazıyoruz. 
+
+Sonra Cache manager adında bir class oluşturup bu class içinde user objelerinin oldugu listede 
+bulunan tüm user elemanlarını json objesi formatında ama string şekline getirip Shared manager
+üzerinden save list metodu ile kaydediyoruz. 
+
+veriyi çekmek istedigimizde de string formatında kaydettigimiz bu String Json formatlı Listesini 
+geri çekiyoruz ve decode edip user objelerine döüşttürtüp kullanmak isteyen kişilere gönderiyoruz. 
+

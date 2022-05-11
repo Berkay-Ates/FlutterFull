@@ -1,0 +1,4 @@
+Flutterda yerelde data saklamak için kullanılabilir bir diger yöntem de Flutter Secure Context'tir. 
+Secure context data'yı encrypted olarak telefona kalıcı bir şekilde kaydeder. yani 
+uygulama telefondan kaldırılsa dahi flutter secure kontext ile kaydedilen data hala bellekte bir yerde
+şifrelenmiş şekilde tutulmaya devam eder. 

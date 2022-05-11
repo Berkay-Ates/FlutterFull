@@ -1,0 +1,18 @@
+Shared PReferences basit de olsa öyle kafaya göre kullanılamaz 
+Shared preferncese öncelikle Ayrı bir Shared ManagerClassı oluşturuyoruz. 
+Sonra Manager içine SharedPreferences'le ilgili methodları yazıyoruz.
+VE Kodu safety yapmak için init ile Shared objesi tanımlanmamışşa exception fırlatatıran fonk tanımlayarak 
+bu fonksiyonu her shared objesi kullanıldıgında çagırıyoruz. 
+
+
+Shared preferences de kullanılan key'leri Enum olarak tutarsak kimse kafasına göre key kullanmamış olur
+
+
+
+class hata() implements excaption {
+
+    toString(){
+
+        return 'not initialized Moruq';
+    }
+}

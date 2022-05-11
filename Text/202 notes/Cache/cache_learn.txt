@@ -1,0 +1,7 @@
+Cache için yani cihazın memeorisine veri kaydetmek için shared preferences i kullanabiliriz
+
+Shared Preferences ile cihazın memorisine istedigimiz dataları kaydedebiliriz. 
+Shared preferences ile primitive dataların saklanması tavsiye olunur çünkü kullanıcıların 
+önemli verilerinin Shared peferences gibi basit manipule edilebilecek yerlerde kullanılması 
+önemli bir güvenlik açıgı olabilir. kısacası shared preferences primitive datalar için vardır. 
+

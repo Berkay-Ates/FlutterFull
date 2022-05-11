@@ -3,6 +3,6 @@ içine fonksiyonlarımızı yazarak bu fonksiyonları değiştirilemez yani dı�
 hale getirdik 
 
 
-Service classının late objesini tanımlarken Abstrack Classı tür olarak tanımlayabiliriz. 
+Service classının late objesini tanımlarken abstract Classı tür olarak tanımlayabiliriz. 
 Ama objeyi tanımlarken abstract classtan türeyen yapıyı kullanmamız gerekir. 
   

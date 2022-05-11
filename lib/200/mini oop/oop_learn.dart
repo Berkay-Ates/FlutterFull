@@ -14,10 +14,8 @@ abstract class IFileDownload {
 class FileDownload extends IFileDownload {
   @override
   bool? downloadItem(FileItem? fileItem) {
-    if (fileItem == null) throw FileDownloadException();
-    print('file object downloading');
-
-    return true;
+    // TODO: implement downloadItem
+    throw UnimplementedError();
   }
 }
 
