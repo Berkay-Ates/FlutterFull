@@ -1,0 +1,55 @@
+
+ShowModelBottomSheetView en çok kullanılan bottom Sheet komponentidir
+
+=> barrier Color  - arka sayfa rengi 
+=> background Color - sheet rengi 
+=> shape - sheet şekli 
+=> isScrollControlled - Sheet'in isSrolled özelligini true yaparsak bottom sheet otomatik olarak
+                        tam ekran açılır. Eger ekranın belli kısmında otomatik olarak gözüksün 
+                        istersek de sizedBox ile sheet'e kesin bir boyut veririz böylece sınırlanmış 
+                        olarak gözükür 
+
+=> Bottm Sheetin otomatik olarak sadece kendi contexti kadar yer kaplamasının istendigi durumlarda 
+   sheet'in isScrollControlled özelligini true yapıp Column'un özelligini Size.min yaparsak sheet 
+   sadece ekranda içinde bulundurdugu elemanlar kadar yer kaplar. 
+   Eger SizedBox'ile veya da herhangi bir şeyle sheet'in sınırları sınırlanmassa isScrolled true 
+   oldugu sürece sheet tüm ekranı kaplar. Ama herhangi bir özellikle sınırlarını sınırlarsak bu defa 
+   sheet sadece ekranda içindeki elemanlar kadar yer kaplae  
+
+
+
+== CONTEXT 
+sheet context'i içerisinden Main page'in Context'ine hiçbir zaman data yazılamamzlı. Daha Dogrusu alt 
+Context'lerden üst context'lere hicbirzaman data yollanmamlı.alt context'den üst contextlere ulaşmak 
+istenirse BottomSheetModel Widget'ini extract widget yaparak Sonrasında statefull widget'e çeviririz. 
+Böylece BottomSheetModel Class'ı artık Statefull oldugu için kendi hayatı üzerinden propertyleri 
+yönetilebilir. 
+
+
+==> Alt Classdan ust classa haber verme kısmını da burada ayrı ayrı yönetilen 2 state arasında navigatorlar
+    üzerinden yollanan verilerle yapabiliriz. 
+
+
+
+==> kısacası modal bottom sheet'i statefull yaparak kendisine yenş bir hayat kazandırık dolayısıyla
+bottom sheetin hayatını kendi içinde main screen'in context'ini kendi i.inde yönettik. Bu 2 farklı hayat 
+arasındaki iletişimi de Navigator'lar üzerinden sagledık dönen farklı degerler
+
+
+
+==> PRO USAGE 
+custom Sheet widgeti oluşturulup base kısmı varsa bu base kısmı da sheet widgeti içine yazılarak 
+sheet widgeti custom bir wdget haline getirilir.Fazladen kullanıcının eklemek istedigi widget'de 
+parametre olarak dışarıdan istenir. Sonrasında mixin bir class içerisinden show moddel
+custom widget'imizi ekrana çizecek ve model bottom sheet'den gelecek olan response'ları return edecek olan
+bir fonksiyon yazıyoruz (bu seneryoda sheet'in return value'si Nvaigator.pop üzerinden gelen bool degeri).
+Sonrasında kim isterse bizim mixin classımızı dahil edip custom model sheet widget'imizi göstertebilir. 
+Aynı senaryo AlertDialoglar için de aynı  
+
+
+
+
+
+
+
+

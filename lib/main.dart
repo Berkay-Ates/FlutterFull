@@ -20,6 +20,7 @@ import 'package:master/100/stateless_learn.dart';
 import 'package:master/100/text_field_learn.dart';
 import 'package:master/100/text_learn.dart';
 import 'package:master/200/form_learn_view.dart';
+import 'package:master/200/model%20bottom%20sheet/alert_image_zoom.dart';
 import 'package:master/200/service/comments_learn_view.dart';
 import 'package:master/200/service/service_learn_view.dart';
 import 'package:master/200/service/service_post_learn_view.dart';
@@ -39,8 +40,10 @@ import '200/cache/shared_learn_cache.dart';
 import '200/cache/shared_list_cache.dart';
 import '200/image_learn_200.dart';
 import '200/mini oop/oop_learn_view.dart';
+import '200/model bottom sheet/alert_learn.dart';
 import '200/package_view_learn.dart';
 import '200/password_texrfield.dart';
+import '200/model bottom sheet/sheet_learn.dart';
 import '200/state mange/state_manage_view.dart';
 import '200/tab_learn.dart';
 import '200/theme_learn_view.dart';
@@ -72,7 +75,7 @@ class MyApp extends StatelessWidget {
       //   ),
       //   errorColor: ColorValues().sulu,
       // ),
-      home: const SecureContextView(),
+      home: const AlertImageZoom(),
     );
   }
 }
