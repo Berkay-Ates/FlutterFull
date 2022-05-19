@@ -1,0 +1,16 @@
+Provider içindeki verilere provider ile alakalı olmadan yani read veya watch etmeden ulaşabilmek için 
+selector ve Consumer yapılarının özellikleri kullanılır.
+
+==> Selector 
+
+Selector<ReqResProvider, bool>(
+    builder: ((context, value, child) {
+        return value ? const Placeholder() :const Text('Selector Worked');
+    }),
+    selector: (context, provider) {
+        return provider.isLoading;
+    }),
+
+ -> Selectorun en en başında hangi Provider üzerinde calışıp ne selector içinde ne dönderecegini söylüyoruz
+    Selector içerisinde bu degeri dömndürdügümüzde bu deger builder içindeki velue kısmına düşüyorn
+    bu sayede biz de gelen bu value degerine göre aksiyona alıyoruz.

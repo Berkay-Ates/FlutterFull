@@ -1,0 +1,50 @@
+genericler kullanılabilir oldukları her alande kullanılmalıdırlar. Bu sayede kodda ve projenin 
+genel yapısında daha safe yapılar saglanmış olur 
+
+List myList;
+Map myMap;
+
+Yukarıdaki gibi tanımladıgımız listede herhangi bir tip tanımlamassak otomatik olarak aşşagodaki
+gibi bir tanımlama yapılır. 
+
+List<dynamic> myList;
+Map<dynamic, dynamic> myMap; => eger handle edecegimiz datanın çesidini biliyorsak bunu kesinlikle genericlerle tanımlamamız gerekir 
+
+dart ayrıca genericleri fonksiyonlarla kullanmasına da olanak saglar 
+
+
+T genericki bu fonksiyionu kullanan kişiye fonksiyon tarafından saglanacak degeri temsil etmektidir
+
+
+enum Size {
+  small,
+  medium,
+  large
+}q
+
+T stringToEnum<T>(String str, Iterable<T> values) {
+  return values.firstWhere(
+    (value) => value.toString().split('.')[1] == str,
+    orElse: () => null,
+  );
+}
+
+Size size = stringToEnum<Size>("medium", Size.values);
+
+örn//
+class Stack<T> {
+  List<T> _stack = [];
+
+  void push(T item) => _stack.add(item);
+  T pop() => _stack.removeLast();
+}
+
+Bu kod sayesinde herangi tarzdaki bir objeyi içine alıp sonra bu listanin elemanlarını manipule edenilecek yapıyı kurgulamıs oluyoruz. 
+yani farklı farklı objeler icin yukarıdakı mantıgı tekrar ettirebiliriz. Genericlerin bu gucu sayesinde buradaki mantıgı sadece classın 
+constructoru icinde alınabilecek tek tarz eleman icin degil istedigimiz tarzdaki elemanlar icin calıstırtabiliriz
+
+
+
+*** some other info *** 
+For example, assigning a String to int is a compile-time error. Casting an object to a String 
+using as String fails with a runtime error if the object isn’t a String.

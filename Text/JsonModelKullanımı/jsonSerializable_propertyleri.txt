@@ -1,0 +1,32 @@
+Json serializable annotationu içinde 
+ 
+-> mesela service'e herhengi bir veri yollamayacaksak toJson metodlarını kapatabiliriz. 
+    createToJson:false ile işlemi düzeltebiliriz. 
+
+-> oldu ki model classının prepertyleri farklı isimle geldi o zaman yapılması gereken işlem 
+    yanlış isimle gelebilecek veya ismini degistirmek istedigimiz elemanın üstüne
+    @JsonKey(name: 'istedigim bir isim') seklinde bildiri koyabiliriz bu sayede build runner
+    bu property'nin ismini gidip bizim için ayarlar. 
+
+    -> eger gelen tüm propertylerin isim formatını degiştirmek veya belli bir şekle oturtmak istersek de
+       bu defa yapılması gereken @JsonSerializable() annotation'u içinde fieldRename Propertysini
+       degiştirmemiz yeterlidir.  
+
+->  Aslında JsonSerializable'ın mantıgı model ve bu modelin jspndan objeye veya objeden json'a vevrilme
+    olayını build runner'a yaptırtmak ve herhangi bir degisiklik yapmak istedigimizde bu degisikligin 
+    gerektirdigi tüm islemleri yine basit bir şekilde yine build runner'a yaptırmaktır. 
+
+==> Json'dan gelen bir property'e istedigimiz bir degeri atamak veya gelen deger üzerinde bir işlem 
+    yapıp degeri oyle modele vermek istiyorsek 
+
+    _____________________________________________________________________________________
+
+    String func funcIsterBuraya(Sting PantoneValue){
+        return 'aaa';
+    }
+
+    model 
+    String .., 
+    int ... ,
+    @JsonKey(fromJson: funcIsterBuraya)
+    String pantoneValue,

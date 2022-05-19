@@ -14,13 +14,11 @@ ShowModelBottomSheetView en çok kullanılan bottom Sheet komponentidir
    sadece ekranda içinde bulundurdugu elemanlar kadar yer kaplar. 
    Eger SizedBox'ile veya da herhangi bir şeyle sheet'in sınırları sınırlanmassa isScrolled true 
    oldugu sürece sheet tüm ekranı kaplar. Ama herhangi bir özellikle sınırlarını sınırlarsak bu defa 
-   sheet sadece ekranda içindeki elemanlar kadar yer kaplae  
-
-
+   sheet sadece ekranda içindeki elemanlar kadar yer kaplar  
 
 == CONTEXT 
-sheet context'i içerisinden Main page'in Context'ine hiçbir zaman data yazılamamzlı. Daha Dogrusu alt 
-Context'lerden üst context'lere hicbirzaman data yollanmamlı.alt context'den üst contextlere ulaşmak 
+sheet context'i içerisinden Main page'in Context'ine hiçbir zaman data yazılmamalı. Daha Dogrusu alt 
+Context'lerden üst context'lere hicbir zaman data yollanmamlı.alt context'den üst contextlere ulaşmak 
 istenirse BottomSheetModel Widget'ini extract widget yaparak Sonrasında statefull widget'e çeviririz. 
 Böylece BottomSheetModel Class'ı artık Statefull oldugu için kendi hayatı üzerinden propertyleri 
 yönetilebilir. 
@@ -31,8 +29,8 @@ yönetilebilir.
 
 
 
-==> kısacası modal bottom sheet'i statefull yaparak kendisine yenş bir hayat kazandırık dolayısıyla
-bottom sheetin hayatını kendi içinde main screen'in context'ini kendi i.inde yönettik. Bu 2 farklı hayat 
+==> kısacası modal bottom sheet'i statefull yaparak kendisine yeni bir hayat kazandırdık dolayısıyla
+bottom sheetin hayatını kendi içinde main screen'in context'ini kendi icinde yönettik. Bu 2 farklı hayat 
 arasındaki iletişimi de Navigator'lar üzerinden sagledık dönen farklı degerler
 
 

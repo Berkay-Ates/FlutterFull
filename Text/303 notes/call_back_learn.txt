@@ -1,0 +1,33 @@
+
+
+Widget'ler içierisinde Color, Text gibi parametrelere ek olarak gerektigi durumlarda
+custom onClick metodları alabiliriz. 
+
+
+
+final VoidCallback olarak widget içine fonksiyon tanımlıyoruz sonra da istedigimiz yerde bu gonksiyona 
+kendi içinden erişip döndürmek istedigimiz elemanını dödürtüyoruz. Bu sayede widgeti kullananlar
+tanımladıgımız aksiyonlar sonucunda widgetlin fonksiyonundan gelen degeri alabiliyorlar
+
+==> FOR EXAMPLE 
+
+  final void Function(CallbackUser user) onUserSelected;
+  -> void demek kendi widgetine herhangi birsey donmeyecek demek , icindeki callbackUser da karsoya
+     CallbackUser objesi yollayacak demektrir
+
+  widget icinde herhangi bir yerde 
+  widget.onUserSelected.call(CallbackUser); -> eger bir bool return type'ı olsaydı 
+  
+  bool result = widget.onUserSelected.call(CallbackUser); şeklinde calısırdı
+
+===    ===     ===    ===     ===     ===     ===     ===     ===     ===     ===     ===     === 
+
+Callback user adındaki button parametre olarak kanka kendine nullable bir fonksiyon istiyor. 
+Sonra bu nullable fonksiyon buttona tıklandıgında random bir sayı uretip urettigi bu sayuyu cagrıldıgı
+yere gonderiyor. karslıgında da bir boolean deger bekliyor. karsı taraf zaten bu nullable fonksiyonu 
+cagırdıgında otomatik olarak nullable bir deger dondurmus oluyor. button da gelecek boolean degere gore 
+kendini guncelliyor
+
+
+Eger Gelecekolan boolean bir futuresa yani hemen return edilmeyecekse bu defa fonksiyonu future void
+tanımlamamız gereklidir. 

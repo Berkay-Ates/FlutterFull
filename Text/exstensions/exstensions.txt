@@ -2,17 +2,22 @@ flutter da enumnlar üzerine extension yazabildigimiz gibi context gibi main ele
 üzerine de exstension yazarak elemanlar üzerine sitediğimiz gibi değişik özellikleri flutter'ın elemanları 
 üzerine dahil edebiliriz.
 
+*** Onemli olan ise burada yazacagımız exstension function'unun computed time run mu yani get olarak 
+çalışscagı mı yoksa farkı direk bir fonksiyon gibi mi calisacagıdır. Bu olaya karar verecek olan ise
+bu  exstensionu nerede hangi amac ile kullanmak icin yazdıgımızdır.
+
 
 flutter da ister enumlar üzerine ister context gibi ana yapılar üzerine exstensions' lar yazarak
 bu yapıların tekrar eden kod özelliklerini kırpabiliriz. Bu sayede bu elemanların gerek tekrar eden 
 kod yapılarından kurtuluruz gerekse bu elmanları zenginleştirerek farklı özellikleri bünyelerine 
 katmalarını sağlayabiliirz
  
-exstensionların yazımı ise "  exstension ali on veli { }  " yandaki gibidir. 
+exstensionların yazımı ise "  exstension ali on veli { }  " gibidir. 
 
 
 Enum üzerine exstension yazarken exstension içinde name anahtar kelimesi ile anum'un adına erişebiliriz 
-exstensionu çalıştırırken de enumun adı üzerinden exstensionlara erişir ve çalıştırırız  
+exstensionu çalıştırırken de enumun adı üzerinden exstensionlara erişir ve çalıştırırız.
+TEkrardan exstension'un Classına erismemiz gerekmez 
 
 
 === === === ===

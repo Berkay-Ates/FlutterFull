@@ -25,11 +25,15 @@ import 'package:master/200/service/comments_learn_view.dart';
 import 'package:master/200/service/service_learn_view.dart';
 import 'package:master/200/service/service_post_learn_view.dart';
 import 'package:master/200/theme/light_theme.dart';
+import 'package:master/300/Something%20Like%20Exercise/userLoginDummy.dart';
 import 'package:master/demos/color_demos_view.dart';
 import 'package:master/demos/color_life_cycle_view.dart';
 import 'package:master/demos/my_collections_demo.dart';
 import 'package:master/demos/note_demos_view.dart';
 import 'package:master/demos/stack_view_demo.dart';
+import 'package:master/product/global/resource_context.dart';
+import 'package:master/product/global/theme_notifier.dart';
+import 'package:provider/provider.dart';
 import '100/indicator_learn.dart';
 import '100/list_tile_learn.dart';
 import '100/padding_learn.dart';
@@ -48,8 +52,19 @@ import '200/state mange/state_manage_view.dart';
 import '200/tab_learn.dart';
 import '200/theme_learn_view.dart';
 import '200/widget_size_enum_learn_view.dart';
+import '300/callback_learn.dart';
+import '300/part-part-of/part_of_learn.dart';
+import '300/advanced tabbar/tabbar_advanced.dart';
+import '300/reqres_resource/view/provider_view/req_res_view_provider.dart';
+import '300/reqres_resource/view/req_res_view.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MultiProvider(
+      providers: [
+        Provider(create: (_) => ResourceContext()),
+        ChangeNotifierProvider(create: ((context) => ThemeNotifier())),
+      ],
+      builder: (context, child) => MyApp(),
+    ));
 
 class MyApp extends StatelessWidget {
   @override
@@ -57,7 +72,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       debugShowCheckedModeBanner: false,
-      theme: LightTheme().theme,
+      theme: context.watch<ThemeNotifier>().currentTheme, //? burada theme Data getter ile gelmesi lazım
+      //? herhangi bir fonksiyon çalıştırtarak theme de return edilen fonksiyoından theme'i okuyamayız.
       // ThemeData.dark().copyWith(
       //   bottomAppBarTheme: const BottomAppBarTheme(shape: CircularNotchedRectangle()),
       //   tabBarTheme: const TabBarTheme(
@@ -75,7 +91,7 @@ class MyApp extends StatelessWidget {
       //   ),
       //   errorColor: ColorValues().sulu,
       // ),
-      home: const AlertImageZoom(),
+      home: const ReqresViewWithProvider(),
     );
   }
 }

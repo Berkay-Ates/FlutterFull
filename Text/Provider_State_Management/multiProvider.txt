@@ -1,0 +1,7 @@
+Thema gibi uygulamanın genelini etkileyecek olaylar için provider'larımızı uygulamanın olabilecek 
+en tepe kısmından yani main dosyası icinden provide ederiz. 
+
+*** Provider niyetinde olusturulan class herhangi bir sekilse UI ile etkilesmeyecekse bu prvider'i 
+    ChangeNotifierProvider ile degil de direk  Provide ile kullanıma sunarız.
+
+    

@@ -46,14 +46,9 @@ class _TabLearnState extends State<TabLearn> with TickerProviderStateMixin {
 
   TabBar _myTabView() {
     return TabBar(
-      onTap: (int index) => null,
-      controller: _tabController,
-      tabs: _MyTabViews.values
-          .map((e) => Tab(
-                text: e.name,
-              ))
-          .toList(),
-    );
+        onTap: (int index) => null,
+        controller: _tabController,
+        tabs: _MyTabViews.values.map((e) => Tab(text: e.name)).toList());
   }
 
   TabBarView _tabbarView() {

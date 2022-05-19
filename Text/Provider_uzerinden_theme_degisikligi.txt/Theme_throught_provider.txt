@@ -1,0 +1,6 @@
+Theme tüm saufaları etkileyecegi icin theme contextini en dısarıdan yani main dosyası uzerinden provide 
+etmemiz gereklidir bu sayede main icinden okuyarak theme e provider icinden degistirebiliriz. 
+
+Eger Bak eger class herhangi bir ui islemi yapmayacak ve sadece data maipule edecekse bu classs tek basına 
+sadece provider kullanılarak provide edilebiril. Ve sadece read işlemleri icin kullanulabilir
+

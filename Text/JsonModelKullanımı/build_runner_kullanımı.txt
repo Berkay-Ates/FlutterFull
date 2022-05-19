@@ -1,0 +1,20 @@
+Build runner calıstırmadan once hangi classlarım model ıcınde serializable olacagını isaretliyoruz.
+isaretleme islemi de classın başına serializable() yazmaklo aluyor. Sonra bu classa build runner'ın 
+üretmesini istedigimiz classın adını part ile üstte tanımlıyoruzbu sayede build runner bizin icin 
+gereken islemi yapıtor. 
+
+--> Build runner'ın yapmıs oldugu islemi alıp kullanmak icini isin meyvesini yemek icin 
+
+    >-> From Json 
+        From Json islemi bir factory islemdir dolayısıyla once fonk'u factory anahtar kelimesini
+        basına yazarak factory yaparız sonra da fonksiyon icinde build runner'ın olusturmus oldugu 
+        fonksiyonu alıp kullanırız. 
+
+
+    >-> ToJson 
+        ToJson basit bir sekilde build runnerin icindeki fonksiyonu kullanır ve calısır.
+
+Data kısmında yaptıgımız bu işlemleri Modelin en base kısmında da yapıyoruz ve build runnerın bizim 
+icin olusturmus oldugu kodları da boylece kullanmış oluyoruz. 
+Sonrasında bize herhangi biri modele su objeyi ekle dediginde bunu sadece data kısmında tek yere 
+eklememiz yeterlidir build runner bu sayede calısıp bizim icin gereken isleleri hallediypr. 

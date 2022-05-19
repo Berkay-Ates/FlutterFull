@@ -1,7 +1,7 @@
 Tabbar kullanaağımız sayfa içinde Scaffold yerine defaultTabbar Widgetimiz ile işe 
 başlıyoruz. Sonra bu default tabbar'in child'i içinde Scaffoldumuzu veriyoruz. 
 Bu Scaffold'un içnde de TabbarView widgetimizi yerleştiriyoruz. TAbbarView içine 
-koyacağımız tab widget'leri detabbar olarak ekranda gözüküyor.   
+koyacağımız tab widget'leri de tabbar olarak ekranda gözüküyor.   
 
 
 Dikkat tabbar PAgeView değildir ama birbirlerine benzerler. 

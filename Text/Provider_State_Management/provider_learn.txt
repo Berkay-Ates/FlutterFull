@@ -1,0 +1,23 @@
+==> Provider'i Provide etmek
+    Provider'ları gerekli olan en küçük yerden ChangeNotifierProvider Widgeti ile sarmalayıp içindeki 
+    verileri Assagıya provide ederiz.
+
+==> Provider oluşturma 
+    Provider içinden gidip hem service'deki verileri çekecek olan fonksiyonları çalıştırırız hem de 
+    service den gelen verileri assagıya provide etmek için herhangi bir degiskende tutarız. 
+
+==> Providerdaki verilere erismek icin
+    ChangeNotifier ile sarmaladıgımız yerler ChangeNotifier'in saglamış oldugu context üzerinde 
+    yasarlar dolayısıyla biz bu context'i kullanarak read<> ve watch<> adındaki 2 property sayesinde 
+    provider içinde bulunan ve service veya başlka yapılarla etkileşerek istedigimiz gibi maipule
+    edilen verilere ulaşabilecegiz. 
+    
+    <>Read tek seferlik oku geç işlemleri için kullanılır
+    <>Watch ise sürekli git ve orayı dinle demektir.
+
+==> Provider verilerinin güncellenmesi 
+    Provider içinde veriler güncellendikten sonra bu güncellemeyi Provider'i dinleyen elemanlara yansıtmak
+    için  notifyListeners() fonksiyonunu çalıştırırız
+
+
+

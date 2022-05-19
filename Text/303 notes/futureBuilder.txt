@@ -1,0 +1,24 @@
+Otomatik olarak herhangi vir yere istek atıp bize snapshot üzerinden veriler dönmesini mi istiyoruz ? 
+
+o zaman bize gereken FutureBuilder'dır. Future builder'e yapacagı istek sonucu bize ne döndürevegini 
+bildirmemiz lazım aksi taktirde snapshot içerisinde ne oldugundan emin olamayız ki zaten future builder
+da calısmaz. 
+
+    ADVANCE INFo 
+        => Eger future builder'ın her seferinde sayfa tabbar içindeyken ekrandan çıkıp gerigeldiginde
+            tekrar tekrar build edilmesini istemiyorsak Future Widgetini AutomaticKeepAliveClientMixin
+            ile birleştiririz. Sonrasında gerkli override' ları yapmamız yeterlidir. 
+            -> Fakat burada soyle bir sorun vardır ki eger sayfada setState çalıştırılırsa otamatik 
+               olarak Future builder tekrardan çalıştırışır. Eger bunu da engellemek istersek Future 
+               Builder'ın builder kısmını widget'in init kısmında bir kere atarız ve artık widget en başlatan
+               build edilmedikçe birdaha yenilenmez. Yani widget'in builder kısmını widget'in initialize
+               altında atadık bu sayede artık widget birdaha en baştan yartatılmadıkça Future builder'ın 
+               Build kısmı build edilmiyoe. 
+
+
+            ==> ALL in all we just initialized the data that comes from the Future builders future inside 
+                of the main widget's initialize part.
+
+
+                Eger Future builder'ın datasını korumzyıp ve sadece build kısmında data'yı initialize edersek:
+                ->

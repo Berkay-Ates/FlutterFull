@@ -1,0 +1,10 @@
+Service'den gelen datalarımızı maipule ederken Json seializable ve json annotatoion adında 2 
+paketten faydalanırız. Oyle json to dart ile direk model sınıfını alıp kullanmak pek tercih edimez.
+
+--> JsonSerializable ve annotation ile beraber build runner dependencysini de eklememiz gerekir 
+    cunku bu dependency serializable ve annotation'un üzerine dusen gorevi yapmaları ıcın gereklidir 
+
+
+==>  Dev Dependency nedir? 
+    Dev dependency altinda bulunan paketler kada etki etmez sadece development esnasında boilerplate 
+    seklindeki diyebilecegimiz kodları uretir 

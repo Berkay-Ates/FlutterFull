@@ -1,0 +1,8 @@
+    Service den gelen verileri manipule ederken eger cekecegimiz model verileri uzerinde 
+    belirli islemler yapmak gerekiyorsa bu islemlerin ilgili methodları medel icinde yazılmalıdır.
+    Cunku bu islem modelin gorevi oldugu icin model icinde bulunmak zorundadır. 
+
+
+NOT:
+    Proje icinde stringlere, intagerlere falan herhangi bir yerde bir islem yapıyorsak bu islemleri
+    exstensionlar uzerinden yaptırmamız gereklidir. Bu sayede daha compact bir yapıya sahip olmus oluruz

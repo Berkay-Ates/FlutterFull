@@ -1,0 +1,14 @@
+
+File private olan eleamanlar birbirlerini göremezler. Fakat herhangi bir durumdan dolayı file privatte
+objeleri farklı dosyalar içerisinde saklamak istersek part-part of yapısını kullanurız. 
+
+
+==> Part Part Of Kullanımı Icın 
+    
+    =>  Main Sayfadan kopardıgımız Kısmı <> part of 'Main Page'; <> şeklinde diger sayfaya
+        refer ettiririz. Sonra Main page den de  <> part 'Part page'; <> şeklinde kopan kısmı 
+        dahil Main Page'e dahil ederiz böylece 2 dosya da bağlanmış olur ayrıca yapılan importlar
+        Main kısma eklenir part kısmında import gelmez.
+
+        part kısım => part of 'Main Page';
+        main kısım => part 'Part page';

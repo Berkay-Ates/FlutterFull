@@ -1,1 +1,1 @@
-TEstlerimizi yazarken test dosyamızın sonunun something_something_test.dart ile bitiyor olması gerekir.
+Testlerimizi yazarken test dosyamızın sonunun something_something_test.dart ile bitiyor olması gerekir.

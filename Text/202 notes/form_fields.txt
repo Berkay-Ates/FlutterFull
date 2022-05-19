@@ -1,12 +1,12 @@
 formfieldItemları form ile sarmalanır ve dışarıdan yönetilmesi için kendine özgü bir key alır. 
-AyrıcaFormField Itemlerin de TExtFeld gibi tüm decoration özellikleri vardırç 
+AyrıcaFormField Itemlerin de TExtFeld gibi tüm decoration özellikleri vardır
 
 FormField'ın kullanımı 
 
 belirli bir key ile form'u bagladık. 
 dışarıdan bir aksiyon ile de _key üzerinden Form componentlerine erişerek bu formun Form fieldlarının 
-validate fonksiyonunu çağırdık (_key.currentState?.validate()). Dışarıdaki bu aksiyon gerek post istegi veya herhengi bir button 
-tıklama olayı olabilir 
+validate fonksiyonunu çağırdık (_key.currentState?.validate()). Dışarıdaki bu aksiyon gerek post istegi 
+veya herhengi bir buttona tıklama olayı olabilir 
 
 => eğer otomatik olarak  vaildate işlemi yapılsın istersek Form'un default olarak userInteraction gelen
 autoValidateMode özelliğini AutomodeVAlidation.always gibi değiştirebiliriz. Tüm bunlara ek olarak 
