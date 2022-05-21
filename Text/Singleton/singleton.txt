@@ -1,0 +1,38 @@
+Tek bir instance var başkası bu instance'dan başka bir obje oluşturamıyor ve sadece
+bu instance'i kullanabiliyorsa burada singleton yapısı kurgulanmıştır demektir.
+
+Singleton'un constructorunu private yaparız ve class içinde constructordan bir instance 
+tanımlarız bu sayede herkes ayni instance ile muattap olmak zorunda kalır. 
+
+Classın Constructorunu singleton yapmak için ._() ile constructoru tanomlarız. Sonra class içinde 
+Bu classtan static bir şekilde bir obje oluştururuz Sonra herkas bu instance ile muattap olur.
+
+***Orn:
+
+class ProjectNetworkManager {
+  ProjectNetworkManager._() {
+    _dio = Dio(BaseOptions(baseUrl: 'https://google.com'));
+  }
+  late final Dio _dio;
+  Dio get service => _dio;
+
+  static ProjectNetworkManager instance = PRojectNetworkManager._();
+}
+
+
+==> Singleton olarak oluşturulmuş objenin kendi classı icindeki fonksiyonları üzerinden veya başka bir
+    yöntemle özelliklerini degistirdigimizde bu degisiklik objenin kullanıldıgı her yere yansır .   
+
+
+??
+
+class DurationManager {
+  DurationManager._();
+  static DurationManager? _manager;
+
+  static DurationManager get manager {
+    if (_manager != null) return _manager!;
+    _manager = DurationManager._();
+    return _manager!;
+  }
+}

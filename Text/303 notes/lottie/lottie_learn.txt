@@ -1,0 +1,13 @@
+Istedigimiz lottie animasyonunu Lottie sitesinden bulduktan sonra istersek gider
+bu lottie'nin animasyonunu kullanırız istersek gider bu lottie dosyasını indiririr asset'den okuruz. 
+
+
+asset, -> indir proje içine at, pubspec.yaml da tanımla ve sonra lottie widgeti ile pathi üzerinden lottie ulaş 
+network, -> url kullan
+memory, 
+file
+
+
+==> Lottie'nin animatiınunu kontrol etmek için normal animasyonlardaki gibi bir animation controller 
+    oluşturup bu animation kontroller'ı lottie attadıktan sonra lottie'nin animasyınunu kontrol edebiliriz. 
+    

@@ -1,3 +1,5 @@
+import 'package:equatable/equatable.dart';
+
 class UserManagement<T extends AdminUser> {
   final T adminUser;
 
@@ -37,7 +39,7 @@ class VBModel<T> {
   VBModel(this.items);
 }
 
-class GenericUser {
+class GenericUser extends Equatable {
   final String name;
   final String id;
   final int money;
@@ -46,6 +48,18 @@ class GenericUser {
     this.id,
     this.money,
   );
+
+  bool findUserName(String name) {
+    //* this.name demek o an  bu fonksiyon hangi objede calıstıysa o objenin nameini al demek
+    return this.name == name;
+  }
+
+  @override
+  String toString() => 'GenericUser(name: $name, id: $id, money: $money)';
+
+  @override
+  // TODO: implement props
+  List<Object?> get props => [id]; //* id popertyleri aynı olanları bir say demek
 }
 
 class AdminUser extends GenericUser {

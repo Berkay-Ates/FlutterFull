@@ -9,3 +9,6 @@ diğer kişilere erişme imkanı vermemeiz iyi olur .
 pub devden projemize eklediğimiz ve native paketlerle flutter arasında bridge özelligi taşıyan 
 paketlerin ilk kullanmları için çalışan uygulamamızı kapatıp tekrar açamamız gerekir yoksa projemizde
 tanımlı olmaz 
+
+Dart PackegeLErden Native Dependency olanları projeye dahil ettikten sonra uygulamayı sıfırdan 
+Başlatmamız gereklidir. 

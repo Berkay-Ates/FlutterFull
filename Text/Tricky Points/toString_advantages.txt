@@ -1,0 +1,5 @@
+
+
+--> Herhangi bir classın toString methodunu override edersek otomatik olarak instance of yerine 
+    loggCat de objelerin bilgilerini goruruz. 
+    

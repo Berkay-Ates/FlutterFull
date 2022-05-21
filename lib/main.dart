@@ -53,6 +53,7 @@ import '200/tab_learn.dart';
 import '200/theme_learn_view.dart';
 import '200/widget_size_enum_learn_view.dart';
 import '300/callback_learn.dart';
+import '300/lottieLearn/lottie.dart';
 import '300/part-part-of/part_of_learn.dart';
 import '300/advanced tabbar/tabbar_advanced.dart';
 import '300/reqres_resource/view/provider_view/req_res_view_provider.dart';

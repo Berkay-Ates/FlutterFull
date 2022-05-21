@@ -1,0 +1,6 @@
+Listlerle birsuru işlemler yapılır bunları oncelikle ihtiyacımız oldugunde arayıp bulmamız gereklidir. 
+:) 
+
+Listelerde yaptıgımız islemelerin bize null dondurme ihtimali oldugu icin her zaman orElse veya benzeri
+cozumlerle islerimizi saglama almamız lazımdır. Bunun icin flutter ekibinin gelistirmis oldugu 
+collection paketi gayet uygundur. 
