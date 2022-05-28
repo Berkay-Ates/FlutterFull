@@ -16,7 +16,7 @@ class ProjectNetworkManager {
   late final Dio _dio;
   Dio get service => _dio;
 
-  static ProjectNetworkManager instance = PRojectNetworkManager._();
+  static ProjectNetworkManager instance = ProjectNetworkManager._();
 }
 
 

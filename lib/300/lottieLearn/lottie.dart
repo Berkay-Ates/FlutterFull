@@ -5,6 +5,9 @@ import 'package:master/product/durations/durations.dart';
 import 'package:master/product/global/theme_notifier.dart';
 import 'package:provider/provider.dart';
 
+import '../../product/navigator/navigator_manager_layer.dart';
+import '../../product/navigator/navigator_roots.dart';
+
 class LottieLearn extends StatefulWidget {
   const LottieLearn({Key? key}) : super(key: key);
 
@@ -20,6 +23,13 @@ class _LottieLearnState extends State<LottieLearn> with TickerProviderStateMixin
   void initState() {
     super.initState();
     _controller = AnimationController(vsync: this, duration: DurationItems.durationNormal());
+    _sendToHome();
+  }
+
+  void _sendToHome() async {
+    await Future.delayed(const Duration(seconds: 5));
+    MyNavigatorManager.instance.pushToPage(RootNames.home);
+    //Navigator.of(context).pushNamedAndRemoveUntil(RootNames.home.withParaf, (route) => false);
   }
 
   @override
@@ -42,7 +52,7 @@ class _LottieLearnState extends State<LottieLearn> with TickerProviderStateMixin
         ],
         title: const Text('lottieLearn'),
       ),
-      body: const Center(child: LottieWidget()),
+      //body: const Center(child: LottieWidget()),
     );
   }
 }

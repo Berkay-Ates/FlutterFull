@@ -1,0 +1,12 @@
+
+
+Navigations için kullanılan paketler: 
+
+    - auto route
+    - go_router
+
+Yukarıdaki paketlerden haric flutter'ın bize saglamış oldugu router kullanımı da vardır.
+
+==> routerin kullanımı ise main dosyası icinde sayfaları tanımlayıp sonrasında pushNamed ile 
+    bu sayfalar arasındaki akısı saglamaktan ibarettir. 
+

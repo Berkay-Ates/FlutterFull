@@ -1,0 +1,28 @@
+
+On generate Routes kullanıyorsak routes Propertisini null bırakmalıyız ***
+
+on generate route içerisinde sayfalar arasında yapılan geçişlerde root'un degiştigini anlayabiliriz. 
+
+yani bu bize bir degişken olarak verilir. Sonrasında yeni route a göre istedigimiz sayfaya kullanıcıyı 
+on genereate root içerisinden gönderebiliriz. gönderirken de gelen argumenti kontrol edip direk kullanıcıyı
+yonlendirdigimiz sayfa içine argumentten gelen verileri otomatik olarak verip daha en baştan olayları 
+cozebiliriz.  
+
+Boylece yonlendirilen sayfa içerisinde artık navıgatordan veri gelip gelmedigini kontrol etmemiz gerekmez.
+
+
+EGER argumantler üzerinden gelen parametreyi material page root settings uzerinden kontrol etmemiz 
+kesmediyse bu defa yollanılan sayfanın ilgili yerinde - belki initState de- Model root'dan bakarak herhangi bir
+deger gelip gelmedigini tekrar kontrol edebiliriz 
+
+
+Yani biz push named yaptıgımızda otomatik olarak root ismini değiştiriyoruz. bu değişiklik onGenerateRoot
+altında bize veriliyor. Bizde yeni root'u yakalayıp gerekirse yeni rootdaki argumanları yakalıyoruz.
+Gerekirse de yeni açılacak olan sayfanın açılış şeklini falan guncelliyoruz. 
+
+Bu olayı basitleştirmak için de gelen yeni root'u alıp gelebilecek olan enumlarımız ile kıyaslattık 
+ve bizim için otomatik olarak tanımlanan switch case icinde olayları yonettik.
+
+ON generate rootes normal rootes kullanımından farklı burada rootsları kendimiz kontrol ediyoruz ve
+ açılacak olan sayfalan en baştan tanımlı değil acılacak widgeti da biz değişen rootNames propertisine
+ gore kendimiz yonetiyoruz. 

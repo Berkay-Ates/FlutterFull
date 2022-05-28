@@ -1,0 +1,5 @@
+
+Normalde init state ininde draw ypılırken çalıştırılamayan kodların calıstırılmasını istersek 
+Futur.microTask( {  } ) komutunu kullanırız böylece ekran draw edildikten sonra microtask icindeki 
+işlemler yapılır ve conflict cozulmus olur 
+

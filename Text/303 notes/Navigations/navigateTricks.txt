@@ -1,0 +1,7 @@
+
+
+main icerisindeki routes listesi main icerisinde bırakılmamalıdır. 
+routes'in nameleri asla elle girilmemelidir. enumlarla ve exstensionlarla desteklenmelidir. 
+
+??=> routes'in unknown roots propertysi ile herhangi bir durumda tanumlanmamış route e gidilmek 
+     istendigi durumu yonetebiliriz. 

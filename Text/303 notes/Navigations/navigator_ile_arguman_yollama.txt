@@ -1,0 +1,5 @@
+
+
+named navigatorlar ile arguman yollarken direk push named' in icerisine argumanlarımızı property olarak 
+veririz. Sonrasında yolladıgımız sayfada gelen veriyi __ ModalRoute.of(context)?.settings.arguments __ ile
+yakalayarak istedigimiz yerde kullanabiliriz. 

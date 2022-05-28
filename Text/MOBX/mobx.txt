@@ -1,0 +1,17 @@
+mobx bizim icin kodlanmıs ve pub dev'e konulmuş olan bir state management paketidir. 
+
+=>  mobx'de observerlar, observablelar ve actionlar tanımlayarak modal view classımızı tanımlarız. 
+    dikkat edişmesi gereken mobx'in development time da code generate ederek calıstıgıdır. bu yuzden 
+    mobx'e ek olarak mobx-codegen paketini de projeye dahil etmemiz gerekir.
+
+=>  yetermi tabi ki de hayır hala arka tarafta otomatik olarak kodların uretilebilmesi icin build runner 
+    isimli vs code exstendionuna ihtiyacımız vardır.
+
+
+==> View Modal mobx icerisinde mobx degiskenlerimizi tanımladıktan sonra istedigimiz bir view icerisine 
+    gidip mobx view modaldan bir obje oluşturup bu obje uzerinden viewdaki istedigimiz widget componentlerini 
+    observer yaparak mobx view modaldaki elemanlara ulaşıyoruz ve view'u update ediyoruz.
+
+
+==> Bu zamazingoyu kullanmak icin flutter_mobx ve normal mobx'i eklemek gerek diyim . Tabi bunlara birde
+    mobx_codegen de dahil onu da soylemeden gecmeyelim

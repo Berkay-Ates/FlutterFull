@@ -22,14 +22,12 @@ class _CallBackLearnState extends State<CallBackLearn> {
         children: [
           //! Dropdown Menu itemda da callbackların kullanımını goruyoruz
           CallBackDropDown(onUserSelected: (CallbackUser _user) => inspect(_user)),
-          AnswerButton(
-            onNumber: (randomNumber) {
-              if (randomNumber % 3 == 1) {
-                return true;
-              }
-              return false;
-            },
-          ),
+          AnswerButton(onNumber: (randomNumber) {
+            if (randomNumber % 3 == 1) {
+              return true;
+            }
+            return false;
+          }),
           LoadingButton(fetchData: (() async {
             await Future.delayed(const Duration(seconds: 2));
           }))

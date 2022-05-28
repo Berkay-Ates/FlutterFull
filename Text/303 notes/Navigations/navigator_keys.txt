@@ -1,0 +1,4 @@
+
+Navigator keys de global bir key olusturup bu key'i navigator'umuza tanımladıgımızda bu key üzerinden 
+tüm push senoryalarımızı tönetebiliriz. eger istersek bu key instance'ını State managaement paketi ile 
+proje geneline degitarak uygulama genelinde istedigimiz gibi her yere  navigate edebiliriz. 

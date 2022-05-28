@@ -57,7 +57,7 @@ class _NavigationLearnState extends State<NavigationLearn> with NavigatorManager
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.chevron_right),
         onPressed: () async {
-          // async olarak push ediyorum sonra buradan bana bir bool deönecek haberin olsun
+          // async olarak push ediyorum sonra buradan bana bir bool de dönecek haberin olsun
           //diye belirtiyorum
           //* final response = await navigateToWidget_Normal_WithData<bool>(context, NavigateDetailLearn());
           //? floating action buttondan gidersek kullanıcının hangi place holder'ı seçip gittigini

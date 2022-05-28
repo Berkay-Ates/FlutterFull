@@ -31,6 +31,9 @@ class _CallBackDropDownState extends State<CallBackDropDown> {
         value: _callbackUser,
         items: CallbackUser.dummyUsers()
             .map((e) => DropdownMenuItem(
+                  //* Dummy user'lar stataik olarak oto oluşturulacagı için gidip
+                  //? Dropdown Button Çagrılır cagrolmaz direk gidip ordan dummy listeyi kendi okudu ve gerekli atamayı
+                  //? olarak kendi halletti
                   child: Text(e.name),
                   value: e,
                 ))
