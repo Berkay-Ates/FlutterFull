@@ -19,11 +19,19 @@ class ReqResProvider extends ChangeNotifier {
 
   Future<void> _fetchItems() async {
     _changeLoading();
-    resource = (await reqresService.fetchResourceItem())?.data ?? [];
+    resource = await fetchItems();
     _changeLoading();
   }
 
-  void saveresource(ResourceContext resourceContext) {
-    resourceContext.saveModel(ResourceModel(data: resource));
+  Future<List<Data>> fetchItems() async {
+    //* internetten veriyi cek ve eşle
+    return (await reqresService.fetchResourceItem())?.data ?? [];
+  }
+
+  bool? saveresource(ResourceContext resourceContext, List<Data>? resources) {
+    //? burada direk provider icindeki service den atanan resource'u saveToLocale Yapıyoruz.
+    //? eger bunu da provider'dan okursak test edebilir hale gelebiliriz.
+    resourceContext.saveModel(ResourceModel(data: resources));
+    return resourceContext.model?.data?.isEmpty;
   }
 }

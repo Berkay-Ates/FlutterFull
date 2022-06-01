@@ -31,7 +31,9 @@ class _ReqresViewWithProviderState extends State<ReqresViewWithProvider> with Pr
               IconButton(
                   onPressed: () {
                     //? Provider içindeki düdük save edici şeyi kullanalım
-                    context.read<ReqResProvider>().saveresource(context.read<ResourceContext>());
+                    context
+                        .read<ReqResProvider>()
+                        .saveresource(context.read<ResourceContext>(), context.read<ReqResProvider>().resource);
                     Navigator.push(context, MaterialPageRoute(builder: ((context) => const ImageLearn200())));
                   },
                   icon: const Icon(Icons.save))

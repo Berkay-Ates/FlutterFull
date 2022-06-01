@@ -1,0 +1,18 @@
+
+
+==> abstract bir class icinde resmin picklenmesini saglayan fonksiyonu ve bu fonksiyonun
+    parametrelerini tanımlıyoruz. Sonrasında resmin picklenebilecegi tum ihtimaller icin ayrı claslar 
+    olusturup bu classların hepsini en bastaki abstract classtan turetiyoruz. devamında uygun senaryoya
+    gore abstract class icindeki fonksiyonu tanımlıyoruz.
+
+==> son adımda bu yapıları en uste baska bir laer yazarak birleştiriyoruz. 
+
+
+abstract class -> variables and functions
+classes -> bu fonksiyonun yapabilecegi işlerin tüm senoryalarına göre class tanımlıyoruz 
+Butunlestirici Layer -> abstract classı parametre olarak alıyor ve abstract class icindeki 
+                        ortak fonksiyonu calıstırıyor. Biz bu layer'a abstract classtan türettigimiz 
+                        classlardan verince otomatik olarak tanımladıgımız senaryonun fonksiyonu 
+                        calıstırılmış oluyor. Istersek ara layer icinde tanımladıgımız fonksiyonda hehangi
+                        senoryadan gelen resmi kırparak buyuterek de geri dondurabiliriz. 
+

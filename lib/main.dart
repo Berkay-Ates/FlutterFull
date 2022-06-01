@@ -59,6 +59,7 @@ import '200/state mange/state_manage_view.dart';
 import '200/tab_learn.dart';
 import '200/theme_learn_view.dart';
 import '200/widget_size_enum_learn_view.dart';
+import '300/Kartal/kartal_learn.dart';
 import '300/callback_learn.dart';
 import '300/lottieLearn/lottie.dart';
 import '300/mobx_image_picker/view/mobx_view_image_upload.dart';
@@ -66,6 +67,7 @@ import '300/part-part-of/part_of_learn.dart';
 import '300/advanced tabbar/tabbar_advanced.dart';
 import '300/reqres_resource/view/provider_view/req_res_view_provider.dart';
 import '300/reqres_resource/view/req_res_view.dart';
+import '300/testable/ımage_generic_picker.dart';
 
 void main() => runApp(MultiProvider(
       providers: [
@@ -104,7 +106,7 @@ class MyApp extends StatelessWidget with NavigatorCustom {
       //routes: NavigatorRoots.instance.routes,
       onGenerateRoute: onGenerateRoute,
       navigatorKey: MyNavigatorManager.instance.navigatorGlobalKey,
-      home: const MobxImageUpload(),
+      home: const KartalLearnView(),
     );
   }
 }
