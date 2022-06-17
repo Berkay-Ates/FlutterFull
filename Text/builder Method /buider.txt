@@ -1,0 +1,5 @@
+
+ ==> BUILD METHOD 
+telefon dahilinde yapılan text fontunu buyutme gibi dehişiklikler hemen flutter uygulamalarına yansır.
+ama yansımamasını istersek main dosyası icinde build methodunu kullanarak text fontu gibi ozellikleri 
+sabit degerlere esitleyebiliriz 

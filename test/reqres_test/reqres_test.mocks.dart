@@ -2,13 +2,14 @@
 // in master/test/reqres_test/reqres_test.dart.
 // Do not manually edit this file.
 
-import 'dart:ui' as _i6;
+import 'dart:async' as _i5;
+import 'dart:ui' as _i7;
 
 import 'package:master/300/reqres_resource/model/resource_model.dart' as _i4;
 import 'package:master/300/reqres_resource/service/reqres_servce.dart' as _i2;
 import 'package:master/300/reqres_resource/view_model/provider_view_model/req_res_provider.dart'
     as _i3;
-import 'package:master/product/global/resource_context.dart' as _i5;
+import 'package:master/product/global/resource_context.dart' as _i6;
 import 'package:mockito/mockito.dart' as _i1;
 
 // ignore_for_file: type=lint
@@ -56,17 +57,22 @@ class MockReqResProvider extends _i1.Mock implements _i3.ReqResProvider {
       (super.noSuchMethod(Invocation.getter(#hasListeners), returnValue: false)
           as bool);
   @override
+  _i5.Future<List<_i4.Data>> fetchItems() =>
+      (super.noSuchMethod(Invocation.method(#fetchItems, []),
+              returnValue: Future<List<_i4.Data>>.value(<_i4.Data>[]))
+          as _i5.Future<List<_i4.Data>>);
+  @override
   bool? saveresource(
-          _i5.ResourceContext? resourceContext, List<_i4.Data>? resources) =>
+          _i6.ResourceContext? resourceContext, List<_i4.Data>? resources) =>
       (super.noSuchMethod(
               Invocation.method(#saveresource, [resourceContext, resources]))
           as bool?);
   @override
-  void addListener(_i6.VoidCallback? listener) =>
+  void addListener(_i7.VoidCallback? listener) =>
       super.noSuchMethod(Invocation.method(#addListener, [listener]),
           returnValueForMissingStub: null);
   @override
-  void removeListener(_i6.VoidCallback? listener) =>
+  void removeListener(_i7.VoidCallback? listener) =>
       super.noSuchMethod(Invocation.method(#removeListener, [listener]),
           returnValueForMissingStub: null);
   @override

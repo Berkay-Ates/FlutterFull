@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './my_mvvm_view.dart';
+import 'my_mvvm_view.dart';
 
 class myMvvm extends StatefulWidget {
   @override

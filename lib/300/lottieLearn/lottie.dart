@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:master/product/Lottie/lottie_items.dart';
-import 'package:master/product/durations/durations.dart';
-import 'package:master/product/global/theme_notifier.dart';
 import 'package:provider/provider.dart';
 
+import '../../product/Lottie/lottie_items.dart';
+import '../../product/durations/durations.dart';
+import '../../product/global/theme_notifier.dart';
 import '../../product/navigator/navigator_manager_layer.dart';
 import '../../product/navigator/navigator_roots.dart';
 

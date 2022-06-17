@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:master/300/mobx_image_picker/modal_view/image_upload_view_modal.dart';
+import '../modal_view/image_upload_view_modal.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:master/product/utility/image_upload.dart';
+import '../../../product/utility/image_upload.dart';
 
 class MobxImageUpload extends StatefulWidget {
   const MobxImageUpload({Key? key}) : super(key: key);

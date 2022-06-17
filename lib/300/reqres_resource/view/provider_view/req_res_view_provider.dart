@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:master/200/image_learn_200.dart';
-import 'package:master/product/extension/string_exstension.dart';
-import 'package:master/product/global/resource_context.dart';
-import 'package:master/product/global/theme_notifier.dart';
+import '../../../../200/image_learn_200.dart';
+import '../../../../product/extension/string_exstension.dart';
+import '../../../../product/global/resource_context.dart';
+import '../../../../product/global/theme_notifier.dart';
 import 'package:provider/provider.dart';
 import '../../../../product/service/project_dio.dart';
 import '../../model/resource_model.dart';

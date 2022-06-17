@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:master/core/random_image.dart';
+
+import '../core/random_image.dart';
 
 class StackViewDemo extends StatelessWidget {
   const StackViewDemo({Key? key}) : super(key: key);

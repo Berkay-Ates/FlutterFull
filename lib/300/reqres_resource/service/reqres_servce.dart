@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
-import 'package:master/300/reqres_resource/model/resource_model.dart';
+import '../model/resource_model.dart';
 
 abstract class IReqresService {
   final Dio dio;

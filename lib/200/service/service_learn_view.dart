@@ -1,9 +1,9 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:master/200/service/comments_learn_view.dart';
-import 'package:master/200/service/post_model.dart';
-import 'package:master/200/service/post_service.dart';
+import 'comments_learn_view.dart';
+import 'post_model.dart';
+import 'post_service.dart';
 
 class LearnService extends StatefulWidget {
   const LearnService({Key? key}) : super(key: key);

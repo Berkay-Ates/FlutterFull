@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './my_mvvm_view_model.dart';
+import 'my_mvvm_view_model.dart';
 
 class myMvvmView extends myMvvmViewModel {
   @override

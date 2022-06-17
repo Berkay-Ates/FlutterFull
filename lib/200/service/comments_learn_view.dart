@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:master/200/service/comment_model.dart';
-import 'package:master/200/service/post_service.dart';
+import 'comment_model.dart';
+import 'post_service.dart';
 
 class CommentLearnView extends StatefulWidget {
   const CommentLearnView({

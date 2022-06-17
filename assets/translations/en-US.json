@@ -1,0 +1,9 @@
+{
+    "login" : {
+        "welcome" : "login welcome"
+    },
+    "button":{ 
+        "send": "Send"
+    }
+
+}

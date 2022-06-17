@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:master/product/navigator/navigator_roots.dart';
+
+import 'navigator_roots.dart';
 
 class MyNavigatorManager {
   //? Classı sıngleton'a cekince icindeki _navigator key propertysi de otomatik olarak sadece 1 defa

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:master/100/container_sized_learn.dart';
+import 'container_sized_learn.dart';
 
 class ScaffoldLearn extends StatelessWidget {
   const ScaffoldLearn({Key? key}) : super(key: key);
@@ -18,10 +18,8 @@ class ScaffoldLearn extends StatelessWidget {
       bottomNavigationBar: Container(
         decoration: ProjectContainerDecoration(),
         child: BottomNavigationBar(items: const [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.abc_rounded), label: 'item1'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.abc_outlined), label: 'item2')
+          BottomNavigationBarItem(icon: Icon(Icons.abc_rounded), label: 'item1'),
+          BottomNavigationBarItem(icon: Icon(Icons.abc_outlined), label: 'item2')
         ]),
       ),
     );

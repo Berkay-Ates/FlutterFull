@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:master/100/color_learn.dart';
-import 'package:master/100/icon.learn.dart';
-import 'package:master/100/image_learn.dart';
-import 'package:master/100/indicator_learn.dart';
+import '../100/color_learn.dart';
+import '../100/icon.learn.dart';
+import '../100/image_learn.dart';
+import '../100/indicator_learn.dart';
 
 class TabLearn extends StatefulWidget {
   const TabLearn({Key? key}) : super(key: key);

@@ -1,9 +1,9 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
-import 'package:master/300/Navigation/navigata_home_view.dart';
-import 'package:master/300/Navigation/navigate_home_detail_view.dart';
-import 'package:master/300/lottieLearn/lottie.dart';
-import 'package:master/product/navigator/navigator_roots.dart';
+import '../../300/Navigation/navigata_home_view.dart';
+import '../../300/Navigation/navigate_home_detail_view.dart';
+import '../../300/lottieLearn/lottie.dart';
+import 'navigator_roots.dart';
 
 import '../../main.dart';
 

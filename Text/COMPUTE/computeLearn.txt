@@ -1,0 +1,6 @@
+ekranı kilitleyebilecek olan islemleri arkada baska bir thread uzerinde yaptırırız boylece  
+asıl ekranda herhangi bir bolunme olmadan user friendly bir app yazmıs oluru.
+
+
+==> ekranı bolebilecek olan islemlerden kasıt dosya yazma islemelri veya da cok buyuk for donguleri olabilir 
+    islem gerektirsin yeter yani ,

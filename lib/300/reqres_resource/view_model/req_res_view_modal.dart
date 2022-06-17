@@ -1,10 +1,10 @@
 import 'dart:developer';
 
-import 'package:master/200/cache/shared_learn_cache.dart';
-import 'package:master/300/reqres_resource/model/resource_model.dart';
-import 'package:master/300/reqres_resource/service/reqres_servce.dart';
-import 'package:master/product/service/project_dio.dart';
-import 'package:master/product/service/my_project_network_manager.dart';
+import '../../../200/cache/shared_learn_cache.dart';
+import '../model/resource_model.dart';
+import '../service/reqres_servce.dart';
+import '../../../product/service/project_dio.dart';
+import '../../../product/service/my_project_network_manager.dart';
 import '../view/req_res_view.dart';
 
 abstract class ReqresViewModel extends LoadingStatefull<ReqresView> with ProjectDioMixin {

@@ -1,0 +1,2 @@
+Analyse options yaml dosyası ile proje icerisindeki kurallarımızı belirtiriz 
+ -> ornegin herhangi bir sekilde proje icerisinde print islemi yaptırılmasın gibi 

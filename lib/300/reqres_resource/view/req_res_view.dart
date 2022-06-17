@@ -1,7 +1,8 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:master/product/extension/string_exstension.dart';
+
+import '../../../product/extension/string_exstension.dart';
 import '../view_model/req_res_view_modal.dart';
 
 class ReqresView extends StatefulWidget {

@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:master/200/mini%20oop/custom_exception.dart';
+import '../mini%20oop/custom_exception.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 abstract class IFileDownload {

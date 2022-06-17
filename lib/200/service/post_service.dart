@@ -1,8 +1,10 @@
 import 'dart:io';
+
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:master/200/service/comment_model.dart';
-import 'package:master/200/service/post_model.dart';
+
+import 'comment_model.dart';
+import 'post_model.dart';
 
 abstract class IPostService {
   Future<bool> _addItemToService(PostModel model);

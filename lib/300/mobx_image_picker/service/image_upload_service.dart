@@ -2,8 +2,8 @@ import 'dart:developer';
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:dio/dio.dart';
-import 'package:master/300/mobx_image_picker/model/image_upload_response.dart';
-import 'package:master/300/reqres_resource/model/resource_model.dart';
+import '../model/image_upload_response.dart';
+import '../../reqres_resource/model/resource_model.dart';
 
 class ImageUploadService {
   final Dio dio;

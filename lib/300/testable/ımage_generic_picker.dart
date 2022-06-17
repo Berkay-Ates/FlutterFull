@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:master/product/utility/image_upload_manager_2.dart';
+import '../../product/utility/image_upload_manager_2.dart';
 
 import '../../product/utility/image_upload.dart';
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:master/200/state%20mange/state_learn_view_model.dart';
+
+import '../state%20mange/state_learn_view_model.dart';
 
 class StateManageLearnView extends StatefulWidget {
   const StateManageLearnView({Key? key}) : super(key: key);

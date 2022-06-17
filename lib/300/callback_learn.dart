@@ -1,8 +1,10 @@
 import 'dart:developer';
+
 import 'package:flutter/material.dart';
-import 'package:master/product/widget/button/answer_button.dart';
-import 'package:master/product/widget/button/loading_button.dart';
-import 'package:master/product/widget/callback_dropdown.dart';
+
+import '../product/widget/button/answer_button.dart';
+import '../product/widget/button/loading_button.dart';
+import '../product/widget/callback_dropdown.dart';
 
 class CallBackLearn extends StatefulWidget {
   const CallBackLearn({Key? key}) : super(key: key);

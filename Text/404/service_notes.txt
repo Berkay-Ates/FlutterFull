@@ -1,0 +1,7 @@
+
+
+service kullanırken en iyisi kullanacak oldugumuz sevice dosyasını her zaman dısarıdan almamızdır 
+ service clasımıza dısarıdan bir network objsei alarak islemleri bu obje uzerinden yututmemiz 
+ daha verimli olacaktır 
+
+ 

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:master/100/color_learn.dart';
-import 'package:master/100/icon.learn.dart';
-import 'package:master/100/indicator_learn.dart';
-import 'package:master/300/advanced%20tabbar/tabbar_feed_view.dart';
+
+import '../../100/color_learn.dart';
+import '../../100/icon.learn.dart';
+import '../../100/indicator_learn.dart';
+import '../advanced%20tabbar/tabbar_feed_view.dart';
 
 class TabbarAdvanced2 extends StatefulWidget {
   const TabbarAdvanced2({Key? key}) : super(key: key);

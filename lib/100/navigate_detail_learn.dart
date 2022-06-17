@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:master/100/statefull_learn.dart';
+import 'statefull_learn.dart';
 
 class NavigateDetailLearn extends StatefulWidget {
   const NavigateDetailLearn({

@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:master/200/cache/shared_manager.dart';
 
+import '../shared_manager.dart';
 import '../user_model.dart';
 
 class UserCacheManager {

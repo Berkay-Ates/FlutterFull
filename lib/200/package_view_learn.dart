@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:master/200/package/launch_manager.dart';
-import 'package:master/200/package/loading_bar.dart';
+import 'package/launch_manager.dart';
+import 'package/loading_bar.dart';
 
 class PackageViewLearn extends StatefulWidget {
   const PackageViewLearn({Key? key}) : super(key: key);

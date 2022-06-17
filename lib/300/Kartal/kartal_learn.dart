@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
-import 'package:master/200/image_learn_200.dart';
+import '../../200/image_learn_200.dart';
 
 class KartalLearnView extends StatefulWidget {
   const KartalLearnView({Key? key}) : super(key: key);

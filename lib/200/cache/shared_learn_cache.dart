@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:master/200/cache/user_model.dart';
+import 'user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:master/200/cache/shared_manager.dart';
+import 'shared_manager.dart';
 
 class SharedLearn extends StatefulWidget {
   const SharedLearn({Key? key}) : super(key: key);

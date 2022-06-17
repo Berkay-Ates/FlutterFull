@@ -1,0 +1,29 @@
+cubit de mobix ve provider gibi bir state management kutuphanesidir.
+
+==> cubit'in ana classı abstract bir classa exteneds eder ve en başta cubit ayağa kalktıgında ilk state icin 
+    bu abstract classtan türemiş bir class'a süper anahtar kelimesi sayesinde extends eder. 
+
+==> VB tarzı kullanım ise 
+
+    Tek bir state yaparız abstract bir classtan türlü türlü stateler türetmeyiz. Onemli olan nokta kullan-
+    dıgımız tek state'in Equatable classtan turemiş olması gereklidir. Equatable sayesinde variable'lar 
+    degişmedigi surece boş yere ekranlar cizilmez dolayısıyla performans kaleminde bir kazanc saglanmış olur.
+
+
+==> Oluşturdugumuz bu login cubiti kullanırken de tıpkı mobx gibi en kucuk yapıyı block provider ile 
+    sarmalayıp cubit builder sayesinde context uzerinden verilere ulşabiliriz .
+
+<==> BLock provider altında herhangi bir variable okurkan block builder kullanırız. Bir fonksiyon cağrısı 
+    yaparken bunu context üzerinden yapabiliriz. Ama view'un context'i ile karıştırmamak için fonksiyon 
+    cagrısını da bir builder ile sarmalayarak buildrdan gelen contexti kullanmalıyız.
+      
+==> EKRANLAR DİNLİYOR PEKİ DİNLEYEN EKRANLARA DEĞİŞİKLİGİ NASIL BİLDİRECEGİZ ? 
+    
+    -> Provider kullanırken setchanges() metodunu calıstırıyoruz. Blockta ise emit yani yaymak anlamına 
+       gelen metodu kullanırız ve değişiklik olacak olan state'i guncelleriz.  
+       -> Not mobx'de consumerlar ve elemanları taglememiz emiti gerektirmiyordu bu durumu yonetmemizde 
+          yeterliydi.
+          
+
+        -> objelerin copywith metodları ile eski objelerini tamamen yok edip yenilerinin oluşturulmasının
+          onune gecebiliriz

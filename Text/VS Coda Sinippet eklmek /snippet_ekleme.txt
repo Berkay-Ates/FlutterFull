@@ -1,0 +1,8 @@
+
+
+=> Vs Code da proje dahilinde veya global olarak bir snippet dosyası olusturarak istedihimiz dile ait 
+    olan snippet kodunun boilerplate templentini ekleriz ve bu snippt'e de ozel olarak bir isim
+    veririz ki her lazım oldugunda bu isim uzerinden boilerplate'i cagiraabilelim. 
+
+=> Snippet icerisinde kullanıcının snippeti kullanırken manuel olarak girecegi yerlere ise $ (dolar) 
+    isareti koyarız. 

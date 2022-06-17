@@ -1,0 +1,57 @@
+{
+	// Place your master workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	
+	"flutter change loading" :{
+		"scope":"dart",
+		"prefix": "fcl",
+		"body": [
+			"bool isLoading = false;",
+			"void changeLoading(){",
+			"setState((){",
+			"isLoading = !isLoading;",
+			"//* type here your comments $1",
+			"});",
+			"}"
+		] 
+	},
+
+
+	"flutter scaffold view" :{
+		"scope":"dart",
+		"prefix": "fvs",
+		"body": [
+			"import 'package:flutter/material.dart';",
+
+"class $1 extends StatefulWidget {",
+  "const $1({Key? key}) : super(key: key);",
+
+  "@override",
+  "State<$1> createState() => _$1ViewState();",
+"}",
+
+"class _$1ViewState extends State<$1> {",
+  "@override",
+  "Widget build(BuildContext context) {",
+    "return Container();",
+  "}",
+"}",
+
+		] 
+	},
+
+}

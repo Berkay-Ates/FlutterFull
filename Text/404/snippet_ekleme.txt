@@ -1,0 +1,8 @@
+
+
+=> VS code icerisinde custom snippetlerimizi eklemek istersek yapmamız gereken sey eklemek
+    istedigimiz snippetin ait oldugu dili language specific icinden secerek ilgili snippeti 
+    eklemektir. 
+
+    -> snippeti icersinde kullanıcının doldurmasını istedigimiz yerlere de dolar isareti koyarız . 
+    
